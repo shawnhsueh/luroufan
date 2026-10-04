@@ -1,0 +1,306 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.544457,
+     24.992813
+    ]
+   },
+   "properties": {
+    "id": "ChIJEZpolAaqQjQRavVwRuPOv5U",
+    "name": "晶采麵店",
+    "address": "116臺北市文山區景東里景興路179號",
+    "price": 20,
+    "dish": "魯肉飯",
+    "items": [
+     {
+      "dish_name": "魯肉飯",
+      "price": 20,
+      "size": null,
+      "portion_note": null,
+      "is_set_meal": false
+     }
+    ],
+    "confidence": "medium",
+    "price_source": "menu",
+    "source_url": "https://rebeccahsiao.pixnet.net/blog/posts/2032909308",
+    "website": "https://rebeccahsiao.pixnet.net/blog/post/32909308",
+    "google_maps_url": "https://maps.google.com/?cid=10790570707737703786&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "price_level": 1,
+    "rating": 4,
+    "notes": "價格來自2014年的部落格食記，非店家官方菜單，目前價格可能已調整，建議再向店家確認。",
+    "last_checked": "2026-10-04"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.529076,
+     25.024677
+    ]
+   },
+   "properties": {
+    "id": "ChIJs-9OhYWpQjQR5VGyKL2J5fc",
+    "name": "師大夜市生炒花枝羹",
+    "address": "106臺北市大安區龍泉里師大路39巷11號",
+    "price": 25,
+    "dish": "滷肉飯(小)",
+    "items": [
+     {
+      "dish_name": "滷肉飯(小)",
+      "price": 25,
+      "size": "小",
+      "portion_note": null,
+      "is_set_meal": false
+     }
+    ],
+    "confidence": "medium",
+    "price_source": "menu",
+    "source_url": "https://vilo92.pixnet.net/blog/posts/9094040515",
+    "website": "https://vilo92.pixnet.net/blog/post/94040515",
+    "google_maps_url": "https://maps.google.com/?cid=17862834942559539685&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "price_level": 1,
+    "rating": 3.6,
+    "notes": "價格來自2012年的部落格食記，並非店家官方菜單，現在價格可能已經不同。食記中只列出小碗滷肉飯25元。",
+    "last_checked": "2026-10-04"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.545121,
+     25.079609
+    ]
+   },
+   "properties": {
+    "id": "ChIJ3TxLMQSsQjQREYVNRqBbABM",
+    "name": "大直老店米粉湯",
+    "address": "10491臺北市中山區永安里北安路476號",
+    "price": 30,
+    "dish": "魯肉飯",
+    "items": [
+     {
+      "dish_name": "魯肉飯",
+      "price": 30,
+      "size": "小",
+      "portion_note": "部落格2018年食記所載價格",
+      "is_set_meal": false
+     }
+    ],
+    "confidence": "medium",
+    "price_source": "menu",
+    "source_url": "https://wisely.tw/read-27614.html",
+    "website": "https://www.wiselyview.cc/read-27614.html",
+    "google_maps_url": "https://maps.google.com/?cid=1369195030653011217&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "price_level": 1,
+    "rating": 4,
+    "notes": "價格來自2018年的部落格食記,並非店家官方菜單,現在價格可能已經調漲。文中標示「魯肉飯NT30(小)」,只有小碗價格,未列出其他尺寸。",
+    "last_checked": "2026-10-04"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.554715,
+     25.051831
+    ]
+   },
+   "properties": {
+    "id": "ChIJLf9JsjirQjQRG7Y-JFiRAPU",
+    "name": "大鼎豬血湯 台北小巨蛋店",
+    "address": "105臺北市松山區東勢里南京東路四段109號",
+    "price": 30,
+    "dish": "魯肉飯(小)",
+    "items": [
+     {
+      "dish_name": "魯肉飯(小)",
+      "price": 30,
+      "size": "小",
+      "portion_note": null,
+      "is_set_meal": false
+     }
+    ],
+    "confidence": "medium",
+    "price_source": "menu",
+    "source_url": "https://a5160828.pixnet.net/blog/posts/46058943",
+    "website": "https://a5160828.pixnet.net/blog/post/46058943",
+    "google_maps_url": "https://maps.google.com/?cid=17654270347043583515&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "price_level": 1,
+    "rating": 3.8,
+    "notes": "價格來自2018年的部落格食記，並非店家官方菜單，可能已過期。只列出小碗魯肉飯，未見其他尺寸。",
+    "last_checked": "2026-10-04"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.518536,
+     25.032091
+    ]
+   },
+   "properties": {
+    "id": "ChIJ-6uctZ6pQjQRbOssmdGcz9k",
+    "name": "金峰魯肉飯",
+    "address": "100臺北市中正區龍福里羅斯福路一段10-1號",
+    "price": 35,
+    "dish": "魯肉飯 小",
+    "items": [
+     {
+      "dish_name": "魯肉飯 大",
+      "price": 60,
+      "size": "大",
+      "portion_note": null,
+      "is_set_meal": false
+     },
+     {
+      "dish_name": "魯肉飯 中",
+      "price": 45,
+      "size": "中",
+      "portion_note": null,
+      "is_set_meal": false
+     },
+     {
+      "dish_name": "魯肉飯 小",
+      "price": 35,
+      "size": "小",
+      "portion_note": null,
+      "is_set_meal": false
+     }
+    ],
+    "confidence": "medium",
+    "price_source": "menu",
+    "source_url": "https://jin-feng-braised-pork-rice.mappway.com/menu",
+    "website": "https://jinfengbraisedporkrice.shop/",
+    "google_maps_url": "https://maps.google.com/?cid=15694935650441423724&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "price_level": 1,
+    "rating": 3.7,
+    "notes": "價格來自第三方網站 MappWay,非餐廳官方菜單,可能已過期。魯肉飯分大(60)、中(45)、小(35),以最小份量小碗35元為基準。焢肉飯(80元)為控肉飯,未列入。首頁另顯示「ルーロー飯 60元」,與大碗價格一致。",
+    "last_checked": "2026-10-04"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.517249,
+     25.049291
+    ]
+   },
+   "properties": {
+    "id": "ChIJ9duM7uSpQjQRM-kZN5lWXfw",
+    "name": "蜀羊-一碗小羊肉(北車京站)",
+    "address": "103臺北市大同區建明里承德路一段1號京站時尚廣場B3",
+    "price": 35,
+    "dish": "子龍滷肉飯",
+    "items": [
+     {
+      "dish_name": "子龍滷肉飯",
+      "price": 35,
+      "size": "小",
+      "portion_note": null,
+      "is_set_meal": false
+     },
+     {
+      "dish_name": "子龍滷肉飯",
+      "price": 50,
+      "size": "大",
+      "portion_note": null,
+      "is_set_meal": false
+     }
+    ],
+    "confidence": "medium",
+    "price_source": "menu",
+    "source_url": "https://www.walkerland.com.tw/article/view/299823",
+    "website": "https://www.walkerland.com.tw/article/view/299823",
+    "google_maps_url": "https://maps.google.com/?cid=18184786086446360883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "price_level": 2,
+    "rating": 3.7,
+    "notes": "價格來自2021年的文章，且為新莊宏匯廣場分店，並非北車京站店；菜單可能已過期或各分店價格不同。",
+    "last_checked": "2026-10-04"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.514985,
+     25.065806
+    ]
+   },
+   "properties": {
+    "id": "ChIJZZSxQkepQjQRiQbbNFnuFww",
+    "name": "雙胖子",
+    "address": "103臺北市大同區蓬萊里昌吉街102號",
+    "price": 40,
+    "dish": "魯肉飯(大)",
+    "items": [
+     {
+      "dish_name": "魯肉飯(大)",
+      "price": 40,
+      "size": "大",
+      "portion_note": null,
+      "is_set_meal": false
+     }
+    ],
+    "confidence": "medium",
+    "price_source": "menu",
+    "source_url": "https://thudadai.pixnet.net/blog/posts/5010175130",
+    "website": "https://thudadai.pixnet.net/blog/post/10175130",
+    "google_maps_url": "https://maps.google.com/?cid=871427119825749641&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "price_level": 1,
+    "rating": 3.9,
+    "notes": "價格來自2010年的部落格食記，並非店家菜單，可能已過期。文中只提到魯肉飯(大)NT$40，未列出小碗價格，因此無法確定最小份量的價格。第二個來源與此餐廳無關，已忽略。地址文中為昌吉街106號，與提供的102號不同。",
+    "last_checked": "2026-10-04"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.542832,
+     25.04216
+    ]
+   },
+   "properties": {
+    "id": "ChIJS6JaANqrQjQRu-Vy8aZdQRc",
+    "name": "安東58",
+    "address": "106臺北市大安區誠安里安東街58號",
+    "price": 80,
+    "dish": "四寶滷肉飯",
+    "items": [
+     {
+      "dish_name": "四寶滷肉飯",
+      "price": 80,
+      "size": null,
+      "portion_note": "附滷蛋、油豆腐、筍干、香腸、醃菜脯",
+      "is_set_meal": false
+     }
+    ],
+    "confidence": "medium",
+    "price_source": "menu",
+    "source_url": "https://posh.com.tw/%E5%8F%B0%E5%8C%97%E6%9D%B1%E5%8D%80%E5%9B%9B%E5%AF%B6%E6%BB%B7%E8%82%89%E9%A3%AF%E3%80%90%E5%AE%89%E6%9D%B158%E3%80%91/",
+    "website": "https://posh.com.tw/%E5%8F%B0%E5%8C%97%E6%9D%B1%E5%8D%80%E5%9B%9B%E5%AF%B6%E6%BB%B7%E8%82%89%E9%A3%AF%E3%80%90%E5%AE%89%E6%9D%B158%E3%80%91/",
+    "google_maps_url": "https://maps.google.com/?cid=1675723507955328443&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+    "price_level": 1,
+    "rating": 3.4,
+    "notes": "價格來自2019年的部落格食記，並非店家菜單，可能已過期。只列出「四寶滷肉飯」（含配料的招牌飯），未見單純滷肉飯的價格，且未見不同大小的選項。",
+    "last_checked": "2026-10-04"
+   }
+  }
+ ]
+}

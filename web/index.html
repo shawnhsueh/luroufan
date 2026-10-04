@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>滷肉飯指數 · 台北</title>
+  <meta name="description" content="這家店貴不貴？用地圖看台北各餐廳的滷肉飯價格。">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app viz-root">
+    <aside class="panel">
+      <header>
+        <h1>滷肉飯指數 <span class="city">台北</span></h1>
+        <p class="lede">滷肉飯幾乎每家小吃店都有，用它的價格可以快速比較餐廳的消費水準。</p>
+      </header>
+
+      <section class="stats" aria-label="摘要">
+        <div class="stat"><span class="stat-value" id="stat-count">–</span><span class="stat-label">家數</span></div>
+        <div class="stat"><span class="stat-value" id="stat-median">–</span><span class="stat-label">中位數</span></div>
+        <div class="stat"><span class="stat-value" id="stat-min">–</span><span class="stat-label">最便宜</span></div>
+        <div class="stat"><span class="stat-value" id="stat-max">–</span><span class="stat-label">最貴</span></div>
+      </section>
+
+      <section class="filters" aria-label="篩選">
+        <label class="field">
+          <span>搜尋</span>
+          <input type="search" id="search" placeholder="店名" autocomplete="off">
+        </label>
+        <div class="field">
+          <span>價格 <output id="range-label"></output></span>
+          <div class="range-pair">
+            <input type="range" id="price-min" aria-label="最低價格" step="1">
+            <input type="range" id="price-max" aria-label="最高價格" step="1">
+          </div>
+        </div>
+        <label class="check">
+          <input type="checkbox" id="hide-low"> 隱藏低可信度價格
+        </label>
+      </section>
+
+      <section class="legend" aria-label="圖例">
+        <h2>滷肉飯價格（新台幣）</h2>
+        <ol id="legend-bins"></ol>
+      </section>
+
+      <section class="list-section">
+        <h2>依價格排序 <span class="muted" id="list-count"></span></h2>
+        <ol class="list" id="list"></ol>
+      </section>
+
+      <footer class="muted">
+        價格由程式自動讀取自各餐廳網站，可能已過期。點選餐廳可查看來源菜單。
+      </footer>
+    </aside>
+
+    <main id="map" aria-label="滷肉飯價格地圖"></main>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="app.js"></script>
+</body>
+</html>
