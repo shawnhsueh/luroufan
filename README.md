@@ -1,62 +1,58 @@
-# 滷肉飯指數 — Taipei
+# 滷肉飯指數 — 台北
 
-**Live map: https://shawnhsueh.github.io/luroufan/**
+**線上地圖：https://shawnhsueh.github.io/luroufan/**
 
-Where is the 滷肉飯 (braised pork rice) good? This project reads the Google reviews of restaurants
-in Taipei City, has Claude rate what reviewers say about the 滷肉飯, and plots the scores on an
-interactive map (in Traditional Chinese).
+台北哪裡的滷肉飯好吃？這個專案讀取台北市餐廳的 Google 評論，由 Claude 依據評論中關於滷肉飯的內容評分，
+再把結果畫在互動地圖上。
 
-A sibling of [calamari](https://github.com/shawnhsueh/calamari), which maps calamari prices in Vancouver.
+姊妹專案：[calamari](https://github.com/shawnhsueh/calamari)（溫哥華炸魷魚價格地圖）。
 
 ```
-Google Places (+ up to 5 reviews) ──► Claude rates the 滷肉飯 ──► GeoJSON ──► Leaflet map
-        discover.py                        extract.py               build.py      web/
+Google Places（每家最多 5 則評論）──► Claude 為滷肉飯評分 ──► GeoJSON ──► Leaflet 地圖
+        discover.py                       extract.py             build.py      web/
 ```
 
-## Setup
+## 安裝
 
 ```sh
 conda create -n luroufan python=3.12 && conda activate luroufan
 pip install -e '.[dev]'
-cp .env.example .env   # add GOOGLE_MAPS_API_KEY (Places API (New) enabled) and ANTHROPIC_API_KEY
+cp .env.example .env   # 填入 GOOGLE_MAPS_API_KEY（需啟用 Places API (New)）和 ANTHROPIC_API_KEY
 ```
 
-## Run
+## 執行
 
 ```sh
-python -m pipeline.run                 # everything (rating runs as a Message Batch, ~<1h)
-python -m pipeline.run --sync          # same, but rating one request at a time
+python -m pipeline.run                 # 全部流程（評分以 Message Batch 送出，通常一小時內完成）
+python -m pipeline.run --sync          # 同上，但評分改為逐筆送出
 
-# or step by step
-python -m pipeline.discover --limit-cells 1   # try the centre grid cell first
-python -m pipeline.extract --dry-run          # see what would be sent and roughly how many tokens
+# 或分步驟執行
+python -m pipeline.discover --limit-cells 1   # 先只搜尋中央的一格試試
+python -m pipeline.extract --dry-run          # 預覽會送出的內容和大約的 token 數
 python -m pipeline.extract --sync --limit 10
 python -m pipeline.build
 
-python -m http.server -d web 8000             # open http://localhost:8000
+python -m http.server -d web 8000             # 開啟 http://localhost:8000
 ```
 
-Every step is cached and incremental: Places responses are cached in `data/cache/` (the cache key
-includes the field mask), and a place is only re-sent to Claude when its reviews change. Use
-`extract --force` to re-rate everything.
+每個步驟都有快取、可增量執行：Places 的回應快取在 `data/cache/`（快取鍵包含欄位遮罩），
+店家的評論有變動時才會重新送給 Claude 評分。用 `extract --force` 可以全部重新評分。
 
-## How scores are made
+## 評分方式
 
-- `discover` runs Places Text Search (`zh-TW`) over an 8×8 grid of Taipei City for 滷肉飯, 魯肉飯,
-  小吃, 台式便當, 台菜餐廳 and 餐廳, keeps places whose municipality is 臺北市, and saves up to 5
-  reviews per place to `data/reviews.jsonl`.
-- `extract` sends a place to Claude (`claude-sonnet-5-5`, structured outputs) only if one of its
-  reviews mentions *滷肉飯 / 魯肉飯 / 肉燥飯*. Claude judges only what reviewers say about the 滷肉飯
-  (not service or other dishes) and returns a 1–5 **score**, a short Traditional Chinese **summary**,
-  how many reviews discuss the dish, and any 滷肉飯 **price** a reviewer states, with that review's date.
-  爌肉飯/控肉飯, 雞肉飯 and other rice bowls don't count.
-- Confidence is low for a single mention, medium for two, high for three or more consistent ones.
-- `build` maps every place with a score. Low-confidence scores and prices outside NT$20–200 are
-  listed in `data/review.csv` (an out-of-range price is dropped, the place stays).
+- `discover` 以 `zh-TW` 對台北市 8×8 的網格執行 Places 文字搜尋，關鍵字為滷肉飯、魯肉飯、小吃、
+  台式便當、台菜餐廳和餐廳。只保留地址在臺北市的店家，並把每家最多 5 則評論存到 `data/reviews.jsonl`。
+- `extract` 只把評論中提到「滷肉飯／魯肉飯／肉燥飯」的店家送給 Claude（`claude-sonnet-5-5`，結構化輸出）。
+  Claude 只看評論對滷肉飯本身的描述（不看服務或其他菜色），產出 1–5 分的**評分**、一句繁體中文**摘要**、
+  提到滷肉飯的評論數，以及評論中提到的滷肉飯**價格**和該則評論的日期。
+  爌肉飯／控肉飯、雞肉飯等其他飯類不列入。
+- 可信度：只有一則評論提到為「低」，兩則一致為「中」，三則以上一致為「高」。
+- `build` 把所有有評分的店家放上地圖。低可信度的評分，以及超出 NT$20–200 的價格，會列在
+  `data/review.csv`（超出範圍的價格會被移除，但店家仍保留在地圖上）。
 
-## Fixing data by hand
+## 手動修正資料
 
-Edit `data/overrides.csv` and re-run `python -m pipeline.build`:
+編輯 `data/overrides.csv`，再重新執行 `python -m pipeline.build`：
 
 ```csv
 place_id,score,price,exclude,note
@@ -64,40 +60,36 @@ ChIJ...,4.5,35,,現場試吃 2026-10
 ChIJ...,,,true,已歇業
 ```
 
-An override needs the place to be in `data/restaurants.jsonl` (i.e. found by `discover`).
+要修正的店家必須已在 `data/restaurants.jsonl` 中（也就是 `discover` 有找到）。
 
-## Known gaps
+## 已知限制
 
-- **Small samples.** The Places API returns at most 5 reviews per place, picked by Google as
-  "most relevant", not the newest. Many scores rest on one or two reviews; the popup always says
-  how many reviews mention the dish, and "隱藏低可信度評分" hides single-mention scores.
-- Shops famous for something else (e.g. a noodle shop with a good 滷肉飯 on the side) may have no
-  review among those 5 that mentions the 滷肉飯, so they're missing.
-- Prices from reviews can be years old; the popup shows the review's month.
-- Scores are Claude's reading of reviewers' opinions, not a taste test.
+- **樣本很小。** Places API 每家店最多只回傳 5 則評論，由 Google 挑選「最相關」的，而不是最新的。
+  很多評分只根據一、兩則評論；彈出視窗一定會顯示有幾則評論提到滷肉飯，勾選「隱藏低可信度評分」
+  可以隱藏只有一則評論的評分。
+- 以其他料理出名的店（例如滷肉飯是配角的麵店），這 5 則評論可能都沒提到滷肉飯，因此不會出現在地圖上。
+- 評論中的價格可能是好幾年前的；彈出視窗會顯示評論的年月。
+- 評分是 Claude 對評論者意見的解讀，不是實際試吃。
 
-## Data use
+## 資料使用
 
-Raw review text stays local (`data/reviews.jsonl` is gitignored). The published map only carries
-Claude's score and summary, with "評論來源：Google" attribution and a link to each place's Google
-Maps page.
+評論原文只存在本機（`data/reviews.jsonl` 不納入 git）。公開的地圖只包含 Claude 產生的評分和摘要，
+並標示「評論來源：Google」，附上各店家的 Google 地圖連結。
 
-## Updating the site
+## 更新網站
 
-`web/` is a static site deployed to GitHub Pages by `.github/workflows/pages.yml` on every push
-that touches `web/`. To refresh the data: re-run the pipeline, then commit and push
-`web/data/restaurants.geojson`.
+`web/` 是靜態網站，每次推送有變動 `web/` 的 commit 時，由 `.github/workflows/pages.yml` 部署到
+GitHub Pages。要更新資料：重新執行流程，再 commit 並推送 `web/data/restaurants.geojson`。
 
-## Data & attribution
+## 資料來源與標示
 
-- Restaurant names and locations: Google Places API.
-- Scores, summaries and prices: derived by Claude from Google reviews. Check the Google Maps page
-  before you go.
-- Basemap tiles: © Esri — Esri, HERE, Garmin, © OpenStreetMap contributors.
+- 店名與位置：Google Places API。
+- 評分、摘要與價格：由 Claude 根據 Google 評論產生。前往前請先查看 Google 地圖頁面。
+- 底圖：© Esri — Esri, HERE, Garmin, © OpenStreetMap contributors。
 
-A personal, non-commercial project. Not affiliated with any of the restaurants listed.
+個人非商業專案，與地圖上的任何餐廳均無關係。
 
-## Tests
+## 測試
 
 ```sh
 pytest
