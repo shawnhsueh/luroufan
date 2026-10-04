@@ -24,6 +24,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      # Give app.js/style.css a new URL per deploy so browsers never pair a cached old script with a new page.
+      - run: sed -i "s/?v=dev/?v=${GITHUB_SHA::7}/g" web/index.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: web
