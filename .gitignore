@@ -7,3 +7,4 @@ data/batch_state.json
 .DS_Store
 .pytest_cache/
 .claude/
+data/reviews.jsonl

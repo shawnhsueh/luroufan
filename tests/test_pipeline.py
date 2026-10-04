@@ -2,7 +2,7 @@ import json
 
 import pytest
 
-from pipeline import build, config, discover, extract, fetch_menus
+from pipeline import build, config, discover, extract
 
 
 def test_grid_cells_cover_bbox():
@@ -25,118 +25,75 @@ def test_locality():
     assert discover.locality({}) is None
 
 
-def test_menu_links_same_domain_and_pdf_first():
-    html = """
-      <a href="/about">About</a>
-      <a href="/products">菜單</a>
-      <a href="/menus/dinner">Dinner</a>
-      <a href="https://www.example.com/files/food-menu.pdf">Download</a>
-      <a href="https://instagram.com/menu">Insta</a>
-      <a href="https://example.popmenu.com/menu">Order</a>
-      <img src="/img/happy-menu.jpg" alt="Our menu">
-      <img src="data:image/svg+xml;base64,AAAA" alt="menu">
-      <iframe src="https://menu.example.com/food"></iframe>
-      <a href="/menus/dinner/">Dinner again</a>
-    """
-    pages, images = fetch_menus.menu_links(html, "https://example.com/")
-    assert pages[0].endswith("food-menu.pdf")
-    assert "https://example.com/menus/dinner" in pages
-    assert "https://example.com/products" in pages  # Chinese link text
-    assert "https://example.popmenu.com/menu" in pages
-    assert "https://menu.example.com/food" in pages  # embedded menu on a subdomain
-    assert pages.count("https://example.com/menus/dinner") == 1
-    assert not any("instagram" in p or "about" in p for p in pages)
-    assert images == ["https://example.com/img/happy-menu.jpg"]
+def test_cache_key_includes_field_mask(tmp_path, monkeypatch):
+    monkeypatch.setattr(config, "CACHE_DIR", tmp_path)
+    calls = []
+    monkeypatch.setattr(discover, "_post", lambda client, body: calls.append(body) or {"places": []})
+    cell = discover.grid_cells(1, 1)[0]
+    discover.search(None, "滷肉飯", cell, None)
+    discover.search(None, "滷肉飯", cell, None)
+    assert len(calls) == 1  # second call is cached
+    monkeypatch.setattr(config, "PLACES_FIELDS", config.PLACES_FIELDS + ",places.photos")
+    discover.search(None, "滷肉飯", cell, None)
+    assert len(calls) == 2  # a different field mask is a different cache entry
 
 
-def test_price_pattern_ignores_addresses():
-    text = ("滷肉飯 小30/大40\n控肉飯 NT$55\n雞肉飯40\n貢丸湯 30元\n排骨飯 95\n"
-            "台北市大安區忠孝東路四段216巷27弄3號\n(02) 2771-1234\n2026年10月")
-    assert len(fetch_menus.PRICE.findall(text)) == 5
+def test_to_reviews_prefers_translated_text():
+    place = {"id": "p1", "reviews": [
+        {"rating": 5, "text": {"text": "滷肉飯好吃"}, "originalText": {"text": "Lu rou fan is great"},
+         "publishTime": "2026-05-01T10:00:00Z", "authorAttribution": {"displayName": "A", "uri": "u"}},
+        {"rating": 3, "originalText": {"text": "普通"}},
+        {"rating": 4},
+    ]}
+    out = discover.to_reviews(place)
+    assert [r["text"] for r in out["reviews"]] == ["滷肉飯好吃", "普通"]
+    assert out["reviews"][0]["author"] == "A"
 
 
-def test_is_social():
-    assert fetch_menus.is_social("https://www.facebook.com/Shezi.Island")
-    assert fetch_menus.is_social("https://m.facebook.com/x")
-    assert fetch_menus.is_social("https://instagram.com/x")
-    assert not fetch_menus.is_social("https://www.jinfeng.com.tw/")
-    assert not fetch_menus.is_social("https://notfacebook.com/")
+PLACE = {"place_id": "p1", "name": "X", "address": "台北市中山區南京東路一段1號"}
 
 
-def test_html_text_drops_scripts():
-    text = fetch_menus.html_text("<html><body><script>var x=1</script><p>滷肉飯 35</p></body></html>")
-    assert text == "滷肉飯 35"
-
-
-@pytest.mark.parametrize(
-    "sources, expected",
-    [
-        ([{"error": "HTTP 404"}], "fetch_failed"),
-        ([{"kind": "html", "text_chars": 900, "mentions": 0}, {"kind": "html", "text_chars": 500, "mentions": 2}], "mentions"),
-        ([{"kind": "html", "text_chars": 900, "mentions": 0}, {"kind": "pdf", "text_chars": 10, "mentions": 0}], "needs_vision"),
-        ([{"kind": "html", "text_chars": 1000, "mentions": 0, "prices": 2}], "menu_not_found"),
-        ([{"kind": "html", "text_chars": 900, "mentions": 0, "prices": 30}], "no_mention"),
-    ],
-)
-def test_classify(sources, expected):
-    assert fetch_menus.classify(sources) == expected
-
-
-def test_snippets_merge_overlapping_windows():
-    text = "A" * 5000 + "滷肉飯 35" + "B" * 100 + "肉燥飯 40" + "C" * 5000
-    out = extract.snippets(text)
-    assert "[...]" not in out  # both mentions fall in one window
-    assert "滷肉飯 35" in out and "肉燥飯 40" in out
-    assert len(out) < 2 * extract.SNIPPET_RADIUS + 200
+def test_build_content_needs_a_mention_and_hash_is_stable():
+    assert extract.build_content(PLACE, [{"rating": 5, "text": "排骨飯很好吃", "publish_time": "2026-01-02T00:00:00Z"}]) is None
+    reviews = [
+        {"rating": 5, "text": "魯肉飯小碗35元，肥瘦剛好", "publish_time": "2026-01-02T00:00:00Z"},
+        {"rating": 2, "text": "服務很差", "publish_time": "2024-06-30T00:00:00Z"},
+    ]
+    blocks, h1 = extract.build_content(PLACE, reviews)
+    _, h2 = extract.build_content(PLACE, reviews)
+    assert h1 == h2
+    text = blocks[-1]["text"]
+    assert 'stars="5" date="2026-01-02"' in text and "魯肉飯小碗35元" in text
+    assert "服務很差" in text  # all reviews go along for context
 
 
 def _setup(tmp_path, monkeypatch):
-    for name in ["RESTAURANTS_FILE", "MENU_STATUS_FILE", "PRICES_FILE", "OVERRIDES_FILE", "REVIEW_FILE", "GEOJSON_FILE"]:
+    for name in ["RESTAURANTS_FILE", "REVIEWS_FILE", "RATINGS_FILE", "OVERRIDES_FILE", "REVIEW_FILE", "GEOJSON_FILE"]:
         monkeypatch.setattr(config, name, tmp_path / getattr(config, name).name)
     monkeypatch.setattr(config, "ROOT", tmp_path)
-    monkeypatch.setattr(config, "MENUS_DIR", tmp_path / "menus")
 
 
-def test_build_content_and_hash_stable(tmp_path, monkeypatch):
-    _setup(tmp_path, monkeypatch)
-    d = config.MENUS_DIR / "p1"
-    d.mkdir(parents=True)
-    (d / "01.txt").write_text("飯類\n滷肉飯 小35\n雞肉飯 40")
-    (d / "manifest.json").write_text(json.dumps({"sources": [
-        {"url": "https://x.com", "kind": "html", "file": "00.html", "text_file": "00.txt", "text_chars": 0, "mentions": 0},
-        {"url": "https://x.com/menu", "kind": "html", "file": "01.html", "text_file": "01.txt", "text_chars": 40, "mentions": 1},
-    ]}))
-    place = {"place_id": "p1", "name": "X", "address": "台北市中山區南京東路一段1號", "website": "https://x.com"}
-    blocks, h1 = extract.build_content(place, "mentions")
-    _, h2 = extract.build_content(place, "mentions")
-    assert h1 == h2
-    assert "滷肉飯 小35" in blocks[-1]["text"]
-    assert 'url="https://x.com/menu"' in blocks[-1]["text"]
-
-
-def test_build_applies_overrides_and_range(tmp_path, monkeypatch):
+def test_build_applies_overrides_ranges_and_sorting(tmp_path, monkeypatch):
     _setup(tmp_path, monkeypatch)
     places = [
         {"place_id": pid, "name": pid, "lat": 25.04, "lng": 121.56, "address": "a", "website": None,
-         "google_maps_url": None, "price_level": "PRICE_LEVEL_MODERATE", "rating": 4.5}
-        for pid in ("ok", "huge", "manual", "excluded", "none")
+         "google_maps_url": None, "price_level": "PRICE_LEVEL_INEXPENSIVE", "rating": 4.5, "rating_count": 100}
+        for pid in ("good", "ok", "pricey", "manual", "excluded", "unscored")
     ]
-    item = lambda p: [{"dish_name": "滷肉飯", "price": p, "size": "小", "portion_note": None, "is_set_meal": False}]
-    prices = [
-        {"place_id": "ok", "benchmark_price": 35, "items": item(35), "confidence": "low", "has_lurou": True},
-        {"place_id": "huge", "benchmark_price": 900, "items": item(900), "confidence": "high", "has_lurou": True},
-        {"place_id": "manual", "benchmark_price": None, "items": [], "confidence": "low", "has_lurou": True},
-        {"place_id": "excluded", "benchmark_price": 40, "items": item(40), "confidence": "high", "has_lurou": True},
-    ]
+    rate = lambda pid, score, price=None, conf="high": {
+        "place_id": pid, "status": "ok", "mentions": 3, "score": score, "summary": "滷汁香", "price": price,
+        "price_date": "2026-01-02" if price else None, "latest_mention": "2026-01-02", "confidence": conf, "notes": None}
+    ratings = [rate("good", 4.6, 35), rate("ok", 3.2, conf="low"), rate("pricey", 4.0, 900),
+               rate("manual", None), rate("excluded", 5.0), rate("unscored", None)]
     config.write_jsonl(config.RESTAURANTS_FILE, places)
-    config.write_jsonl(config.PRICES_FILE, prices)
-    config.OVERRIDES_FILE.write_text(
-        "place_id,benchmark_price,dish_name,exclude,note\nmanual,45,魯肉飯(小),,現場確認\nexcluded,,,true,\n"
-    )
+    config.write_jsonl(config.RATINGS_FILE, ratings)
+    config.OVERRIDES_FILE.write_text("place_id,score,price,exclude,note\nmanual,4.2,40,,現場確認\nexcluded,,,true,\n")
     build.main([])
-    feats = {f["properties"]["id"]: f["properties"] for f in json.loads(config.GEOJSON_FILE.read_text())["features"]}
-    assert set(feats) == {"ok", "manual"}
-    assert feats["ok"]["dish"] == "滷肉飯" and feats["ok"]["price"] == 35 and feats["ok"]["price_level"] == 2
-    assert feats["manual"]["price"] == 45 and feats["manual"]["dish"] == "魯肉飯(小)"
+    feats = [f["properties"] for f in json.loads(config.GEOJSON_FILE.read_text())["features"]]
+    assert [f["id"] for f in feats] == ["good", "manual", "pricey", "ok"]  # highest score first
+    by_id = {f["id"]: f for f in feats}
+    assert by_id["good"]["price"] == 35 and by_id["good"]["price_level"] == 1
+    assert by_id["manual"]["score"] == 4.2 and by_id["manual"]["price"] == 40 and by_id["manual"]["score_source"] == "manual"
+    assert by_id["pricey"]["price"] is None  # out-of-range price dropped, place kept
     review = config.REVIEW_FILE.read_text()
-    assert "huge" in review and "price out of range" in review and "low confidence" in review
+    assert "price out of range" in review and "low confidence" in review

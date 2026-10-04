@@ -1,1 +1,255 @@
-place_id,name,price,reason,source_url,notes
+place_id,name,score,price,reason,summary,notes
+ChIJ-4MLprquQjQRJ8gJdYUt_Gk,廟口阿蓮米粉湯,3.5,,low confidence,滷肉好吃，但飯偏軟,僅review 4提到滷肉飯；review 1的控肉飯屬爌肉/控肉飯，不計入。未提供滷肉飯價格。
+ChIJ-75C9gipQjQR8EKaTvekGsw,廖嬌米粉湯（西門店）,3.8,,low confidence,肥瘦適中、微甘清爽，不會有負擔,僅一則評論明確評論滷肉飯；第2則提到的是雞滷飯，不列入計算；第3則提到的150元為薩拉與便當價格，非滷肉飯單點價格。
+ChIJ-XUZXAWsQjQRX3PTtCdsAN0,新皇羹品,2.0,,low confidence,不太推薦，吃起來令人失望,僅一則評論提到滷肉飯，且為負評；其餘評論多談羹湯與排骨。評論中提到被辣菜脯吸引，對滷肉飯本身描述有限。
+ChIJ-dRvasurQjQRrO0MeB-d3wk,胡記通化街米粉湯60年總店(專營豬內臟),2.5,,low confidence,香氣偏淡，油香滷香不明顯，米飯米香不足,僅一則評論評論滷肉飯；其他評論提到雞肉飯、麵線、小菜，與滷肉飯無關。
+ChIJ03wpAo6rQjQRkJjt_S3ANv8,新東街蠔油乾拌麵,4.5,,low confidence,滷肉飯香、價格便宜,僅2021年一則評論提到滷肉飯且評價正面；評論2提到的是雞魯飯（雞肉飯類），不計入。其餘評論多談乾拌麵、小菜與衛生。
+ChIJ06YxvB2pQjQRDaYNiZYkMgo,東引快刀手-南西店,4.0,,low confidence,是真正的滷肉飯而非肉燥飯，不過鹹，配辣醬不錯,僅一則評論提到滷肉飯，其餘多談麵食與滷味；該評論給4星但主要評價滷肉飯，分數依此推估。
+ChIJ0QHYOr2rQjQRCcQtXV4F4_Y,阿吉肉羹滷肉飯,4.0,,low confidence,滷汁給得多、偏鹹，搭現煎荷包蛋燙口好吃,僅評論1提到滷肉飯，有稱讚但提醒滷汁偏鹹；評論4只列出菜單項目，未評論滷肉飯；其餘評論談羹湯、咖哩或滷味，未計入。無滷肉飯價格。
+ChIJ0ZqmDHyqQjQR7DTqk1Ru5g4,焿大王/政大店,4.0,,low confidence,滷肉飯份量剛好、口味到位不油膩,僅評論2提到滷肉飯且為整體好評；評論3的雞滷飯與評論5的知高飯不屬於滷肉飯，未計入。
+ChIJ1UsMam2vQjQR015J_8pqr6A,關渡禚(ㄓㄨㄛˊ)家餃子館,4.0,,low confidence,魯肉飯口感偏黏、香氣足,僅一則評論提到魯肉飯，且描述簡短；其餘評論主要談水餃、麵、滷味。該則日期為2026-08-01，晚於其他評論，請留意日期是否正確。
+ChIJ1djgs3avQjQRIV0PvNyUv8w,吉軒台灣小吃,3.8,,low confidence,滷肉飯被評為不錯，但僅簡短提及,僅第1則評論提到滷肉飯；第4則的「雞魯飯」疑為雞肉飯，未計入。
+ChIJ1eXQShWrQjQR-9Ev_CR9KkI,初泰Pikul｜信義象山門市,4.0,598,price out of range,泰奶奶滷肉飯桌邊淋紹興酒拌炒，鹹甜交織、份量足,僅一則評論提到「泰奶奶滷肉飯」，為泰式餐廳的特色大份量料理（$598），並非傳統小碗滷肉飯，價格為整份售價，未必是最小份量。
+ChIJ1eXQShWrQjQR-9Ev_CR9KkI,初泰Pikul｜信義象山門市,4.0,,low confidence,泰奶奶滷肉飯桌邊淋紹興酒拌炒，鹹甜交織、份量足,僅一則評論提到「泰奶奶滷肉飯」，為泰式餐廳的特色大份量料理（$598），並非傳統小碗滷肉飯，價格為整份售價，未必是最小份量。
+ChIJ20QauMmpQjQRJBjbFHnaz3w,火雞肉飯便當店,4.3,,low confidence,滷肉飯比許多名店香，評價很好,此店主打火雞肉飯，多數評論談的是火雞肉飯或便當，不算滷肉飯。只有評論5提到滷肉飯，且為較舊的2024年評論；便當價格不算單點價格。
+ChIJ214oqxqqQjQRPg46DeIvo-A,仙岩牛肉麵,2.5,,low confidence,滷肉飯味道偏清淡、普通,僅第5則評論評論滷肉飯，第1則只列出菜單。該評論給4星但內容為口味普通、偏清淡且價格偏高，故分數取中偏低。
+ChIJ2eP_AturQjQR1Af1W7Rup7I,劉記傳統美食,3.0,,low confidence,滷肉飯還行，帶有獨特香味,僅2021年一則評論提到滷肉飯，其餘多談臭豆腐與油飯；評價為「還行」，分數僅供參考。
+ChIJ31fu4fepQjQR8gjv8DIxkg4,再見一麵·麵食店,3.8,,low confidence,魯肉飯帶古早味、份量剛好,只有一則評論提到魯肉飯，且僅簡短稱讚；其餘評論主要談乾麵、豬肝湯與小菜。分數依單一提及推估。
+ChIJ36Zcfh2qQjQRafW5eR2F70Q,魷魚羹店,2.5,30,low confidence,用偏肥絞肉滷製，缺乏醬香與油脂香氣,僅一則2022年評論提到小滷肉飯（30元，評3/10），資料較舊；其他評論多談麵線、水餃、牛肉麵。
+ChIJ3SQqmyyqQjQR0zDM1Eb2V90,老胡記米粉湯60年老店-復興店,3.5,,low confidence,料多，口味不錯但稍偏鹹,僅一則評論提到滷肉飯，其餘評論談米粉湯、雞肉飯等其他餐點；未提及滷肉飯價格。
+ChIJ3TxLMQSsQjQREYVNRqBbABM,大直老店米粉湯,4.5,,low confidence,魯肉飯好吃，評價正面但描述簡短,僅一則評論明確提到魯肉飯，只有正面評價而無細節。評論5提到滷肉是小菜，不算魯肉飯。
+ChIJ3at9eK6vQjQR3rHpsMXiX_Y,桃源小吃,2.8,,low confidence,滷肉飯口味普通，不算突出,僅評論1提到滷肉飯口味（普通）；評論3僅說有賣滷肉飯且整體口味尚可，未專門評論，未計入。其他評論主要談麻醬麵、湯品與服務。
+ChIJ41HSrZarQjQRLlfE0mD0eks,謝老闆雞肉飯,3.0,,low confidence,滷肉飯便當表現普通，菜色豐富但沒有記憶點,只有一則評論提到滷肉飯，且為便當價80元（含配菜與滷蛋），不是單點價格，故未採用。其他評論談的是雞肉飯、滷排骨、控肉。
+ChIJ44jHF9OrQjQRbsk0uPqL-gk,無名麵店,3.5,,low confidence,偏清淡古早味，肉燥偏瘦，有瓜仔肉飯的感覺,僅一則評論提到肉燥飯，且評論多著重麵類與小菜；分數依該則描述（清淡、瘦肉）推估。意麵加肉燥不算滷肉飯。
+ChIJ4WZU55urQjQR0YPQYFsR5Y8,煎炸世家小吃店,2.8,30,low confidence,味道普通、偏乾，豬油香氣不足，價格便宜,僅一則評論提到滷肉飯，且該評論提到是共同老闆的另一間店金林三兄弟的滷肉飯，不一定是本店供應；其餘評論主要談臭豆腐與蚵仔煎。
+ChIJ4_WTgZKrQjQRQMPHg4ZRVw4,二師兄肉羹專賣店-復南店,3.0,35,low confidence,滷肉肥油入口即化，但鹹香與滷汁香氣不突出，飯偏軟,只有2022年一則評論明確評論滷肉飯；評論5提到乾麵的肉燥，不算滷肉飯。其餘多談肉羹。
+ChIJ4b3u9UOpQjQREUJw1i6T144,鬍鬚張魯肉飯(台北民權店),4.0,,low confidence,滷肉飯好吃，內用餐具安心,評論1僅泛稱鬍鬚張好吃，未明確提及滷肉飯；評論5是魯雞飯，不計入。只有評論2明確稱讚滷肉飯，但著墨不多。
+ChIJ5-ZiqoOuQjQRrDGuK348law,玉娟越南小吃,3.0,,low confidence,滷肉飯味道普通，加白胡椒只突顯胡椒香，整體中等,僅一則評論評價滷肉飯，且該評論未列出滷肉飯單價；其他評論多談雞肉飯與河粉。
+ChIJ5-xWD5CuQjQRzbMH28GWCzo,賴記傳統美食天母米苔目,3.5,25,low confidence,香氣不錯、肥瘦相間、米飯粒粒分明，皮油少偏不夠肥，價格便宜,僅一則評論具體評論滷肉飯；另一則評論提到麵上有滷肉但非滷肉飯，未計入。
+ChIJ58nODwABaDQRc0P_SCA-_UQ,香腸攤,2.0,,low confidence,肉燥飯味道偏淡，沒什麼風味,僅一則評論提到肉燥飯，且為簡短負評；其他評論談香腸、臭豆腐與服務，與滷肉飯無關。
+ChIJ59lt3OABaDQRVVvpiuON_FA,木新市場阿莉小吃店,3.0,,low confidence,口味偏重、略鹹，但方向正確，份量偏小,僅一則評論提到滷肉飯，且與乾麵、餛飩湯合併評論，評價為中等；未提及價格。
+ChIJ5Xq6j1CuQjQR4WU8ShJbMy8,無刺虱目魚,3.3,,low confidence,滷肉飯味道還行，整體普通,僅review 1對滷肉飯有簡短評價（還行）；review 2只列出品項並以愛心標示其他菜色，未明確評價滷肉飯。店家主打虱目魚。
+ChIJ5yJL5W-rQjQRUeYJQ3oUtaQ,三華土魠魚羹,4.5,,low confidence,滷肉飯香、不會太油,僅一則評論實際評價滷肉飯；另一則（2026-04-28）因當日沒飯而未吃到，不計入提及數。店家以土魠魚羹為主。
+ChIJ65dR9VGuQjQRbXuD-kvDhqg,吉祥素食,4.5,,low confidence,素食滷肉飯評價很讚，與阿給並列推薦,此為素食店，滷肉飯為素滷肉飯，僅一則評論提及且評語較簡略，無價格資訊。
+ChIJ6UgUDgCtQjQRdv_1n7L3dg0,陳家馬幫堂口-東吳大學外雙溪,4.5,,low confidence,滷肉飯大推，價格實惠、CP值高,僅一則評論提及滷肉飯，且只是簡短稱讚；其餘評論多談滷味與義大利麵。無價格資訊。
+ChIJ6Ve8MgCvQjQRPyFpOsyGvZg,小倆口麵店,4.5,,low confidence,有評論特別喜歡滷肉飯，但未描述細節,僅一則評論提及滷肉飯，且只表示喜歡，無具體描述；其餘評論多談麵類與青菜。
+ChIJ6XJ7O4SrQjQRWGEfRjaR0u8,花蓮扁食,2.5,,low confidence,飯煮得好但滷肉普通；另有評論指豬油味重、飯未熟,兩則提及滷肉飯的評價互相矛盾（中規中矩 vs 油耗味、飯沒熟）。評論3提到的是雞肉滷汁飯，未計入。套餐價格不可作為單點價格。
+ChIJ6zFXHWypQjQRtd0CZcGl1x0,正原担魷魚羹蚵仔煎,3.0,,low confidence,滷肉飯口味尚可，僅屬普通水準,僅一則評論提到滷肉飯，且只簡短評為「ok」，其餘評論著重魷魚羹與蚵仔煎。評論中未列出滷肉飯單點價格。
+ChIJ6zkJIj-rQjQRONz65jF5Z4U,良食魯肉飯,4.0,,low confidence,招牌魯肉飯滷汁濃郁受肯定，但評論多聚焦西滷肉飯,多數評論談的是宜蘭西滷肉飯（白菜滷風味，85元），不算滷肉飯，未採計價格。僅評論2、3提到招牌魯肉飯，但評論2只提及未評價，評論3稱滷汁很好，實質判斷僅一則。
+ChIJ7UZxPgCrQjQRWzEBqkkRDic,享奇鷄健康土鷄肉飯-昆陽店,3.0,,low confidence,輕量版滷肉量偏少，正常版曾覺得不錯,僅一則評論提到滷肉飯，且為輕量版；其餘評論皆談雞肉飯（不計）。店家主打土雞肉飯。評分依單則評論判斷。
+ChIJ7aoNl66pQjQRUwDp5GbeQrw,大碗豬血湯(臨時休假公告FB),4.5,,low confidence,魯肉飯被稱讚比華西街的好吃，分量大、便宜,評論1僅列出點了滷肉飯，未評價味道。評論4的滷肉汁是淋在炒米粉上，不是滷肉飯，故不計入。只有評論5明確評價魯肉飯，因此信心偏低。
+ChIJ8U2tFxmvQjQR1btNK-v5eAg,刈包隆,2.8,,low confidence,魯肉飯味道普通、偏甜,多數評論談的是控肉飯（爌肉飯，不計入）、刈包與四神湯；僅一則評論提到魯肉飯，評價普通。
+ChIJ8UUIm5CuQjQRwcLRYG_vE2M,枚芳小吃,4.5,,low confidence,肉燥似乎加米酒，味道香，價格親民,僅評論4提到滷肉飯，且未列出滷肉飯單價；其他評論談三杯雞、服務或其他餐點。
+ChIJ8XQBERyqQjQRjKTe151bgLA,來來小吃店,4.5,,low confidence,有家常阿嬤手路菜的味道，好吃過癮,僅評論4明確提到滷肉飯；評論1的小碗未指明品項，評論5的阿嬤味道未指明是滷肉飯，故未計入。無滷肉飯價格。
+ChIJ8cENRXCrQjQRz3MRbmUoOTU,三媽臭臭鍋 昆陽店,2.8,,low confidence,鍋物附贈的滷肉飯，味道偏鹹,這是臭臭鍋店，滷肉飯為套餐附餐（可選白飯或肉燥飯）。只有一則評論評價口味（偏鹹），其餘僅提到附餐選項，因此評分依據不足。無單點價格。
+ChIJ8fgyENOpQjQR3L0-Oxzfug8,如意極品豬腳,2.5,,low confidence,滷肉為帶皮肥肉丁，滷汁偏淡、微鹹,僅一則評論提到滷肉，且是中段便當內的滷肉，未明確說是滷肉飯；其餘評論談豬腳、麵線。評分依單一評論推估，參考性低。
+ChIJ8fncPFKuQjQRxemwXaiyfhA,文化魷魚羹,2.0,50,low confidence,只有滷汁與白飯、無配料，滷肉普通，評價偏差,僅一則評論提到滷肉飯（大碗50元）；評論2提到的是乾麵肉燥，不算滷肉飯。價格為大碗，非最小碗。
+ChIJ9-GnOGmsQjQRJlVVwJsxl54,285小老闆,3.5,,low confidence,飯量大碗、滷汁偏少不油膩，口味適中,僅2019年一則評論具體評論魯肉飯；評論2提到的是雞魯飯（雞肉飯），不列入計算。評論內容較舊。
+ChIJ96GLMwCpQjQRxyhNTq03zg8,站前小吃店,3.0,,low confidence,口味中規中矩，加辣椒提味更好，適合快速果腹,僅一則評論提到滷肉飯（小碗），未列價格；其他評論談肉羹麵、招牌麵或店家占用人行道，與滷肉飯無關。
+ChIJ9z4yjECvQjQRwPyasavKj3s,岸咖啡 'AN Coast Caf'e(景觀咖啡館),4.0,,low confidence,特製滷肉飯被評為好吃,僅一則評論提到特製滷肉飯，且只簡短稱讚，未描述細節，也無單點價格。
+ChIJ9zGgEu6rQjQRURAS6fWnSaw,信億小吃店,4.0,,low confidence,滷肉醬香十足、飯偏濕，味道偏淡，辣油香,僅一則評論明確評論滷肉飯；其他評論未提及滷肉飯。無滷肉飯價格。
+ChIJA03WIGupQjQROrxprZe_sXU,方家雞肉飯,2.5,,low confidence,滷肉飯表現普通，無特別亮點,此店主打雞肉飯，僅一則評論提到滷肉飯，評價為「很一般」，無價格資訊。
+ChIJA9_TFFmvQjQRA-tp1e3KJlo,雙月食品社 北投店,3.8,,low confidence,有人覺得普通、不驚艷，也有遊客稱讚好吃,評論多半談湯品與麵類；滷肉飯評價分歧（一則說普通，一則只籠統稱讚好吃），第5則提及滷肉飯但著墨很少。無滷肉飯單點價格。
+ChIJAWazwJauQjQRdIbrioYhqJE,芝山鵝肉切仔麵,3.8,15,price out of range,價格極便宜、口味尚可，屬平價小吃,第1則提到內用滷肉飯15元（原本10元）；第3則僅稱口味還可以且價格平價。第2、4、5則主要談鵝肉或整體，未評論滷肉飯，未計入。
+ChIJAZfjIfKuQjQRM2AHOAkz3mo,懷念ㄟ魯肉飯,4.3,,low confidence,鹹度適中、不油膩，味道好吃,第3則明確稱讚滷肉飯；第2則只提到「魯肉一匙20」是加購價，且並未評論滋味，不算滷肉飯單點價格，故價格留空，也未列入評分。第2則僅泛稱東西好吃，算作提及但不影響評分。
+ChIJAbTlRAABaDQRM7WsY6EfB_I,魚米樂海鮮虱目魚,4.0,,low confidence,有人覺得不合家人口味，也有人稱讚魚肉滷肉飯好吃,評論1認為滷肉飯不合家人口味但未詳述；評論5稱讚「魚肉滷肉飯」，可能是以魚肉製作，是否符合豬肉滷肉飯定義不明，意見分歧，分數僅供參考。
+ChIJB5AQnlCuQjQRy8nLomeub5M,茉利小吃,2.5,,low confidence,滷肉飯的飯偏濕軟，整體普通,僅一則評論提到滷肉飯，且只簡短評論飯偏濕軟，未描述滷肉本身；店家主打切仔麵與紅燒肉。分數依單一簡短評價推估。
+ChIJB96fTEWuQjQR3VLlV5tcbAQ,二四傳統小吃,4.0,,low confidence,肥瘦均衡的絞肉，醬汁入味，油香鹹香平衡、不偏甜,僅一則評論提到滷肉飯，且為內容偏重多道菜色的介紹文，未提及價格。
+ChIJB9HJVbyrQjQRYbzgWFEG94o,汪記雞肉飯,2.8,,low confidence,滷肉部分偏普通，但能吃飽,僅一則評論（2023-11-29）提到滷肉，評價為偏普通；其餘評論皆談雞肉便當。80元為雞肉便當含四樣菜價格，非滷肉飯單點價，故不列價格。
+ChIJB_UCj3uqQjQR3N_yJSrOWtY,政大赤肉羹滷肉飯,4.5,30,low confidence,偏甜口、瘦肉較多，不膩口，適合怕肥肉者,僅一則評論明確評論滷肉飯；其他評論多談一般餐點、服務或其他品項（赤肉飯、米線、菜飯）。價格為小碗30元。
+ChIJBcszFpKrQjQR8oHzUrVzJmo,綵肴客家小館,3.8,,low confidence,湯汁偏水、不黏稠，但味道依然好吃,僅一則評論提到滷肉飯，其餘評論談其他餐點，樣本少。
+ChIJBdDhksirQjQRPIUoHU9Fh3k,火車頭飯麵小吃,4.0,,low confidence,滷肉飯加荷包蛋好吃，簡單一餐,僅一則評論提到滷肉飯；其他評論談炒飯、雞腿、香腸飯、紅糟肉等，與滷肉飯無關。內用油煙味重。
+ChIJBy0rQsmuQjQRNJrny1wuUVs,社子市場 雞肉飯,2.5,,low confidence,滷肉飯表現普通，調味平淡,僅一則評論提及滷肉飯且評價普通；其餘評論多談雞肉飯與炒菜。可點半碗飯。
+ChIJC1PDcsmrQjQR_f22mdWyC-g,SHANN SHANN 小香 台北三越信義店,2.5,,low confidence,九孔滷肉飯口味普通，整體偏一般,僅一則評論提到九孔滷肉飯（套餐內），評價普通；非傳統滷肉飯，分數僅供參考。
+ChIJCVPCuy6qQjQRTMVu6EnZZG0,玉欣珍美食坊,3.5,,low confidence,味道偏傳統、穩定順口，但不特別驚艷,僅一則評論提到滷肉飯，且只是概略評價，無價格；其他評論多談肉圓與小菜。
+ChIJCao_o7SrQjQRuAGg9tPvSJ8,吳興土魠魚焿,3.5,,low confidence,滷肉飯偏甜，屬南部口味,僅一則評論提到滷肉飯，且評價簡短；其餘評論多談土魠魚與羹湯。
+ChIJCyMOkW6sQjQRXjy916iQPso,285大排檔,4.0,,low confidence,滷肉塊大、好吃,僅評論1提到滷肉飯，且為便當（$80雞魯飯便當），非單點價格，故不列價格。評論5提到滷汁肥肉較多但未明確指滷肉飯，未計入。
+ChIJCySx3MypQjQRFJf5c8xfpBE,大吉小吃店,3.8,,low confidence,滷肉不太膩，與雞絲各半搭配，滷汁量適中,僅一則2021年評論提到雞滷飯（雞絲與滷肉各半），並非純滷肉飯，且資料偏舊；其他評論未談滷肉飯。
+ChIJDT6LVnqpQjQRXHeukDFjzhA,大洪原汁排骨湯 中正店,4.0,,low confidence,滷肉飯不油膩、不會太鹹，CP值高,評論2只列出魯肉飯未評價；評論5為滷肉飯便當並給予正面評價，無單點價格。多數評論討論高麗菜飯與排骨湯。
+ChIJDeKOh8urQjQRyDBvBxO7kJM,鬍鬚張魯肉飯 台北通化店,4.0,,low confidence,醬汁充分滲入米飯，味道不重鹹、大眾口味,僅2020年一則評論具體評論滷肉飯，資料較舊；其他評論多談雞肉飯、其他餐點或衛生與漏餐問題。
+ChIJE1zFdJepQjQROJbIFGO46eY,王記排骨酥湯,3.0,,low confidence,肥瘦都有，但瘦肉偏柴乾、香氣不足；另有評價為家常味、肥肉多、滷汁少,僅兩則評論談及滷肉飯且意見分歧（一則失望、一則給4.0星），評論1的雞魯飯不計入；未提及滷肉飯價格。
+ChIJE2FPf4OpQjQRy2NOLOHsqQs,大來小館 金華店,4.3,,low confidence,滷肉富膠質、腴而不膩，被列為招牌,僅一則評論提到滷肉飯，且為多道菜綜合評價，未提供價格；其餘評論未談滷肉飯。
+ChIJE3m5sW4BaDQRO_nhNwVakm0,咩勾米粉湯,3.0,,low confidence,滷肉偏鹹，口味中規中矩,僅評論2明確提到滷肉（偏鹹）。評論1、3的「雞魯飯／雞滷飯」是雞肉飯類，不計入。其餘評論未談滷肉飯。
+ChIJF47Bvw6pQjQRP3Ni4MBKGN8,程味珍意麵滷味,4.0,,low confidence,小碗份量頗大，便宜大碗,僅一則評論提到滷肉飯（份量大、便宜），未描述口味細節；其他評論多談意麵與滷味。肉燥乾意麵不算滷肉飯。未提供價格。
+ChIJFX7aCwCrQjQRtgX6DsoCtAc,好ㄘ 台南虱目魚 興安店,3.8,,low confidence,鮮蝦滷肉飯好吃；口味偏北部、甜度不足,評論2提到「鮮蝦滷肉飯」，可能為特色品項而非傳統滷肉飯；評論4指出口味不夠甜。兩則評價略有分歧，樣本少。
+ChIJFZPbAhWvQjQR5zrthM-zW8U,雙月食品社 和碩店,4.0,,low confidence,滷肉飯被評為好吃,僅一則評論提到滷肉飯，且只簡短稱讚好吃，未描述細節。此店似為公司員工餐廳（僅供員工用餐），其他評論談的是蔥蔥飯、雞油拌飯等其他餐點。
+ChIJFeHUg72rQjQRbcPrmjYW9PY,吳二麻辣鴨血（台大店）,4.5,,low confidence,油香不死鹹，醬汁浸潤每粒飯,此店主打麻辣鴨血，僅一則評論提到滷肉飯，樣本少。
+ChIJG-F7jw-tQjQRHHIQB8HelaU,三川田輕麻辣風麵食館,4.5,,low confidence,肉燥料多有誠意，讓人想加點,僅一則評論提到滷肉飯，其餘評論皆聊麵食與抄手，無價格資訊。
+ChIJG5D-QLWrQjQRGZznogPpHZc,一嘉雞肉飯,3.5,,low confidence,雞滷飯份量足、價格便宜；肉燥飯無驚艷,提到滷肉的評論多為雞滷飯或雞滷便當，對滷肉本身評價有限；唯一直接評肉燥飯的是1星評論（無驚艷）。第5則的價格為雞肉飯，不採用。
+ChIJGaoqsYStQjQRB3SdhP7oTSY,東引快刀手 東湖店 (必吃知名宵夜美食、平價麵館 滷味小吃、人氣銅板料理),4.0,,low confidence,滷肉飯好吃，但湯汁偏少,僅一則評論提到滷肉飯，評價正面但簡短；其餘評論多談其他餐點或服務事件。豬腳飯不計入。
+ChIJGzqYyxOqQjQR119wbrPJcgE,大胖魷魚羹,1.5,55,low confidence,滷肉每口都咬到碎骨，難以入口,僅一則2022年舊評論明確提到滷肉飯且為負評；其他評論未明確指涉滷肉飯。價格為2022年資料，可能已調整。
+ChIJH2a_eO6rQjQRm-xk1dr81Xo,鬍鬚張iPLUS+(台北民生店),4.5,39,low confidence,小滷肉飯價格不變，肉鬆滷肉飯好吃，味道如記憶,僅評論1提到滷肉飯（小滷肉飯$39、肉鬆滷肉飯）；評論3為便當、評論5為便當淋滷肉醬汁，未直接評價滷肉飯，未計入。評論日期2026-08-03晚於其他評論，請留意。
+ChIJH87WoEOuQjQRJKe8BcczcQE,北投茶色泡沫紅茶店,4.5,,low confidence,滷肉飯味道很棒，但份量偏少,僅一則評論提到滷肉飯，其餘評論多談辣椒醬、溫泉蛋、香腸等其他餐點。
+ChIJHSniYF2rQjQRHuMx86GOrFI,彩藍精緻小吃,3.8,,low confidence,洋蔥瘦肉底的滷肉，簡單好滋味，另有蔭瓜香,僅評論5提到滷肉便當與魚肚飯上的滷肉，並非單點滷肉飯；其他評論未談滷肉飯。
+ChIJI2ZxcACrQjQR6107BAsAm0U,新民欣小吃店,4.0,,low confidence,調味不重、口味清淡討喜，內用紙碗不好扒飯,僅一則評論提到滷肉飯，且評語偏簡短；其餘評論多談肉羹、粄條等其他餐點。2026-08-06 的評論為湯品有蟲，與滷肉飯無關。
+ChIJI8ahcEOpQjQRwwm1Tv1usMA,金仙蝦捲飯,3.0,,low confidence,滷汁出色但也有人覺得醬香味不足，意見分歧,評論多半在談蝦捲；僅兩則提到滷肉飯／滷汁，且看法相反（一則稱讚滷汁出色，一則嫌香味醬味不足），故信心偏低。未提及滷肉飯價格。
+ChIJIUViTampQjQRTx-uc9nW0ek,阿鴻知高飯小吃店,3.8,35,low confidence,肉燥肥肉比例較高，滷汁香醇,第1則僅列出價格（魯肉飯小35大50）並未評論口味；只有第5則評價滷肉飯口味，評論偏正面。其餘評論主要談豬腳、排骨與湯品。
+ChIJI_-TEsmrQjQRLgPrQPGRQH0,大鼎豬血湯,2.8,,low confidence,更像肉燥飯，醬汁給得少，白飯偏多，口味普通,僅評論3提到滷肉飯；評論2的控腳輪飯為豬蹄膀，不計入；米粉含肉燥但非滷肉飯。
+ChIJIwZZwAarQjQRAdIBGXW0Hfg,中興眷村-南港昆陽店,4.2,,low confidence,魯肉飯味道美味，可能比其他店家更好吃,僅評論3提到魯肉飯，評論1的「滷味偏鹹」指小菜，未計入。
+ChIJIxLILwipQjQR43MZLq79mbE,米樂拾穗 專業便當店,4.0,,low confidence,滷肉入口即化、品質好，白飯淋滷肉汁,此店為便當店，無單賣滷肉飯價格。評論3稱滷肉入口即化、可單賣品質；評論1僅提到飯淋滷肉汁，未評價味道。評論5的控肉屬爌肉，不計入。
+ChIJJ3M-X2-sQjQRYbRz7sFq3mw,第一劇場魚丸店,2.0,,low confidence,魯肉飯有不少飯結塊,僅一則評論提到魯肉飯，且只有飯結塊的負面評語，未談滷肉本身口味。其餘評論多在談排骨、雞排、麵食與小菜。
+ChIJJ66ajLqsQjQR6pbMKVY8jAo,八百八小火鍋,4.0,,low confidence,自助吧提供肉燥飯，份量足、味道不錯,此為火鍋店，滷肉飯僅為自助吧附餐。只有一則評論明確稱讚肉燥飯好吃，其餘僅提到有提供，因此分數僅供參考。
+ChIJJ9wOMwCtQjQRmFPHgnxAuqg,麻媽家(內湖737店),3.8,,low confidence,魯肉飯還不錯,僅一則評論提到魯肉飯，且評價簡短（「還不錯」），分數為保守估計；該店以麻辣鍋為主。
+ChIJJaU8AryrQjQReQCYK67Wcys,福城古早味,3.0,40,low confidence,醬汁很多、積在飯底，口味普通，份量偏少,評論2的「雞魯飯」疑為雞肉飯，未計入；僅2020年評論明確提到滷肉飯（小碗40元），其他評論未評論滷肉飯，資料較舊。
+ChIJK1lldm6pQjQRCNpHF5VoR0A,香菇滷肉飯,2.5,40,low confidence,偏鹹油膩，單一尺寸，口味普通偏弱,僅一則評論實際評論滷肉飯；其他評論談小菜變質、外送問題或未提及滷肉飯，未納入評分。價格為單一尺寸40元。
+ChIJK2CQDQCtQjQR1V8_bBI9bOY,康樂肉焿,3.8,45,low confidence,小碗滷肉飯好吃，但整體價格偏高,僅一則評論提到滷肉飯，評價為「不錯吃」，分數為依單一評論推估；價格為小碗45元。
+ChIJKSuY2s6tQjQRqBvF1PNkhYU,元圓源,4.5,,low confidence,半肥半瘦、滷得香濃下飯,僅2022年一則評論提到滷肉飯，其餘近期評論主要抱怨配菜與飯量偏少，未評論滷肉飯本身，資料較舊。
+ChIJKY1e8QiuQjQRx0yT38onBws,紗帽橋飯類小菜清粥,4.0,,low confidence,一碗分量飽足，簡單樸素、有家常味,僅一則評論提到滷肉飯，評價偏正面但描述簡短；其他評論多為店家整體印象，未提及滷肉飯。
+ChIJKaF9YrSpQjQRYJMqmOO6o5M,弎重現做赤肉羹,4.0,,low confidence,肉燥味道好、膠質多，但米飯偏軟,僅2018年一則評論提到魯肉飯，資料較舊；其餘評論多談赤肉羹，未提及魯肉飯。店家於106年遷址並更名。
+ChIJKfUp6W6sQjQRMwZneUitLvc,芳琳魯肉飯,3.3,,low confidence,滷肉飯還可以，普通水準，價錢偏高,僅第1則評論明確評論滷肉飯，其餘多談裝潢、服務或便當；第2則未明指滷肉飯，故未計入。
+ChIJLSBal5OuQjQRnQ2ciFvVH0Q,阿鸞滷肉飯，咖哩飯,2.8,,low confidence,滷肉飯普通，味道較無層次,僅評論5提到滷肉飯且評價偏普通；評論2的控肉飯不計入；評論1未明確指出滷肉飯，僅泛稱食物好吃，故不計入。
+ChIJLX0qy56pQjQRFyimgTqpQ5w,南門福州傻瓜乾麵,3.8,,low confidence,肉燥偏濕、走瘦肉油蔥路線，口味厚實適合扒飯,僅一則評論提及滷肉飯，店家主打乾麵與排骨，無滷肉飯價格資訊。
+ChIJLf9JsjirQjQRG7Y-JFiRAPU,大鼎豬血湯 台北小巨蛋店,3.0,,low confidence,滷肉飯中規中矩，沒有特別推薦,僅評論1提到滷肉飯。評論5的控肉飯（80元）不是滷肉飯，故不計入價格與提及數。
+ChIJLwislWuvQjQRbWE-qcvRmdo,阿倫美食屋(關渡店),3.0,,low confidence,滷肉飯普通、沒有特色,只有一則評論明確評論滷肉飯（2023-03-05），其他評論未提及滷肉飯或僅泛稱內容物，故未採計。
+ChIJLxplIwGqQjQRHM04Q2I0320,無名麵店,3.5,,low confidence,滷肉入味香濃，但米飯偏黏、不夠粒粒分明,僅一則評論提到滷肉飯，其餘多談麵類、小菜與下水湯；未提及價格。
+ChIJM-WJECSqQjQRp4q0JfSQrqs,雷記小吃店,4.0,35,low confidence,滷肉量多偏肥、醬汁香濃配飯，飯底佳，肉飯比例約1:1,僅一則評論提到滷肉飯；該評論整體3星但主要是批評炒飯，滷肉飯本身評價正面。小碗35元。
+ChIJMQN33rerQjQRk40eCVvIpiU,原鄉緣,4.0,,low confidence,肉燥飯味道不錯，讓人一口接一口,僅評論5提到肉燥飯。評論1的滷肉是淋在意麵與燙青菜上，評論3的魯味不是滷肉飯，均不計入。
+ChIJMSSZ5QipQjQR4KodWbQYBV0,西門佳香鵝肉亭,4.6,,low confidence,肉肥瘦均衡、膠質豐富，好吃下飯,僅一則評論提到滷肉飯（同一則內有追加更新，兩次都稱讚），其餘評論談鵝肉、鵝腸湯等；未提供滷肉飯單點價格。
+ChIJMbMZP22vQjQRoLy3UOUgHHc,金蔥烏醋麵,4.5,,low confidence,滷肉飯被評為非常好吃美味,僅一則評論提到滷肉飯，且評論主要在讚美麵類與其他餐點，細節不足。
+ChIJMeuurhOqQjQRRq0GTFh7Hac,鴻福擔仔麵,4.0,35,low confidence,滷肉近全肥切大塊，醬香足、醬汁多且不過鹹,僅一則評論提到飄香滷肉飯，且滷肉為大塊切法，與一般碎肉燥略有不同。
+ChIJMfV5NIepQjQR1cs8LnlSCBQ,九十九樓滷味店｜連假有時會休可來電確認,3.5,60,low confidence,加筍角口感豐富，但滷汁淋得不足，飯未吸附滷汁,僅一則評論提到竹筍滷肉飯（60元，可能為加筍特色品項）；其餘評論談滷味、川味牛肉煲飯與衛生，未計入。
+ChIJN9WzEVypQjQR7EQGhPFby0w,古都食堂,4.0,,low confidence,滷肉飯好吃，整體用料實在、價格合理,僅一則評論提及滷肉飯，且只簡短稱讚好吃，未描述細節；其餘評論多談其他菜色或訂位服務。
+ChIJNUC-IkCpQjQRgfxOP0NMxAU,佳珍小吃店,4.5,,low confidence,口感近碎控肉，加胡椒粉好吃,僅評論1提到滷肉飯，口感像碎控肉並讚好吃；評論2的肉燥用於乾麵，非滷肉飯；評論5提到白飯偏軟但未明確指滷肉飯，未計入。無單點滷肉飯價格。
+ChIJNWTe43apQjQRsdHZE9peOq8,黃媽媽家常麵,4.0,,low confidence,味道偏重，帶梅干扣肉風味，特別,僅一則評論提及滷肉飯，且評價為正面但口味偏重；其餘評論主要談麵類與其他餐點。
+ChIJNzKXjq-pQjQRFmlAZmzm9sU,阿華的店,3.8,,low confidence,古早味香、淋醬足夠；但瘦肉偏多、油脂不足,兩則提及意見不一：2023年好評古早味，2020年嫌偏瘦不夠肥。2023年價格為便當組合，未計入單點價格。
+ChIJOcnbot6rQjQRbLRIDxtt4Jw,土魠風味魚羹 遼寧店,3.8,,low confidence,滷肉飯和炒米粉評價不錯，僅簡短提及,僅一則評論（2025-03-14）提到滷肉飯，且只簡短說「不錯」。其他評論談的是紅燒肉與土魠魚羹，不算滷肉飯。評論2的85元是飯加湯的價格，非單點滷肉飯，故不採用。
+ChIJOwz4sbypQjQR05he5t1ATEE,萬中肉骨茶,4.5,,low confidence,搭配肉骨茶不膩口、鹹香適中，加半熟蛋更香濃,僅一則評論提到滷肉飯，主要是肉骨茶店，滷肉飯為套餐配飯，評分依單一評論判斷。
+ChIJOxk8rFKuQjQRNOwWq0957KM,金仙魯肉飯,4.0,,low confidence,醬香滷肉熱澆白飯，香氣與味覺俱佳,僅一則2022年評論提及滷肉（醬香滷肉澆飯），其餘多談排骨便當；評論偏舊，參考性有限。
+ChIJP2_yiFCuQjQRGkWsdNAVUhU,小川雞肉飯,4.8,,low confidence,評論者大力稱讚魯肉飯超好吃,只有一則評論提到魯肉飯，且為簡短讚美，未描述具體口味或價格。其他評論多談排骨飯、配菜或衛生問題。
+ChIJP8ONAO2uQjQRtTlFZuj1km8,阿亮小吃 (必吃宵夜美食、平價麵館 滷味小吃、人氣銅板料理),4.0,,low confidence,滷汁和滷肉香氣足，被評為非常好吃,僅評論3提到滷肉飯，且為便當（含3樣配菜），未標價。評論4的控肉飯不計入。
+ChIJPRIJkGKsQjQRCiGW9fZx9bo,得福小吃,4.0,,low confidence,魯肉飯被評為很好吃,僅有一則2020年評論提到魯肉飯，評價簡短，無價格資訊；其他評論多談雞腿、排骨與炒飯。
+ChIJPd47mSuqQjQR7c-aaNiimxk,麗如小吃店,3.5,,low confidence,口味普通、份量不錯、價格便宜,僅第1則評論明確提到滷肉飯（口味普通、份量足）；其他評論未指明是滷肉飯，故未計入。無滷肉飯單價資訊。
+ChIJPdQ5kVCuQjQRbb83ZcEnXUw,上全肉羹,3.5,,low confidence,滷肉飯也不錯，但飯偏軟,此店主打肉羹，只有一則評論提到滷肉飯（飯偏軟但整體不錯），其餘多談肉羹。肉羹羹麵價格70元不是滷肉飯價格。
+ChIJPxDNZNGrQjQRrQecCahtUzU,陳鐵心 拌拌麵 豬肝湯,3.4,,low confidence,皮油較多、鹹香順口不膩，醬香不重，白飯偏軟爛,僅一則評論提到滷肉飯，且為附帶點的餐點；店家主打豬肝湯與拌拌麵。未提供滷肉飯價格。
+ChIJQ0w7DhGqQjQRxmvSwiG1J8Y,來ㄐㄧㄚ麵店,4.5,,low confidence,雞魯飯滷肉肥瘦剛好、不死鹹，小碗份量滿足,僅一則評論提到滷肉，且是雞魯飯（雞肉絲加滷肉）混合品項，不是單點滷肉飯；無價格資訊。
+ChIJQRD_nGKsQjQR_DMnUq8xvcw,內湖太祖魷魚羹1996,2.0,,low confidence,魯肉飯被評為不好吃,僅一則評論提到魯肉飯且為負評；第5則提到陽春麵加肉燥，並非滷肉飯，未計入。
+ChIJQRSsHI2sQjQR1C-mJn1oMJs,鼎鼎小吃,4.0,30,low confidence,小碗份量不少、肉燥鹹香好吃,僅一則2024年評論提到滷肉飯，其餘評論未提及；價格為小碗30元。
+ChIJQRUcsTmpQjQRzjcZ1QsQc40,林森北路章記魷魚羹(延平店),3.8,35,low confidence,滷肉飯滑順香氣足，肥肉稍多但不膩，白飯可再講究,僅一則評論提及滷肉飯（外送），其餘評論談魷魚羹或其他餐點；店內也有賣魯肉飯，但其他評論未評價。價格為2023年資料，可能已調漲。
+ChIJQRqlo86tQjQRxt3HZbGoeU0,胡記通化街米粉湯 內湖737港墘店,3.8,,low confidence,滷肉飯還不錯，評價偏正面但描述簡短,僅一則評論提到滷肉飯，$100為滷肉飯便當價格（含配菜），不是單點價格，故未採用。分數依單一簡短評價推估。
+ChIJR5o8QkmvQjQRjiO_S1tU9Xs,喫麵殿（天母店）,2.5,,low confidence,滷肉鹹度適中、口感還行，但白飯黏成一團,僅一則評論明確評論滷肉飯；其他提到的是拉麵或麵類的肉燥，不算滷肉飯。評論日期2026-08-22疑似異常。
+ChIJRQVs8LqrQjQRf0AOqoBqSDM,鬍鬚張魯肉飯 台北興安店,3.0,,low confidence,滷肉飯味道普通，與其他分店差不多,僅一則評論（2023-11-27）提到滷肉飯，評價為中性；其餘評論談環境、便當與服務。評論2提到東西難吃但未指明滷肉飯，不計入。
+ChIJRV7YojOqQjQRSuUzQjZNEsw,南京七里香,4.0,,low confidence,滷肉很好吃，但醬汁希望能多一點,僅一則評論提到滷肉飯，且只有簡短評價；其他評論主要談臭豆腐、麵食與服務。
+ChIJRezkrymqQjQRWQvQ51bsHdE,無名麵攤,4.0,25,low confidence,魯肉飯評價不錯，價格平實，但描述簡略,評論1僅列價格（小碗25、大碗35）未評論魯肉飯口味；評論3未實際吃到魯肉飯，只說看起來不錯；評論5稱魯肉飯不錯。能判斷口味的僅評論5，分數依此估計。
+ChIJS3iyVP2vQjQRL_o9IeVsqak,八禾大食館,4.8,,low confidence,滷肉飯好吃到頂極，搭配泡菜臭豆腐佳,僅一則評論提及滷肉飯，且描述簡短，無價格資訊。
+ChIJSbQG2GepQjQRcYXIt7zBJkU,咕嚕咕嚕小吃店,2.0,,low confidence,飯與控肉偏乾、價格偏貴,僅評論1提到「滷肉飯（控肉飯）」，實為控肉飯，與滷肉飯定義不完全相符，且$100為該品項價格但非確定的碎滷肉飯；評論2、5為腿庫肉/腿庫飯，評論4為肉燥乾意麵，均不計入。分數僅供參考。
+ChIJT0CSr22pQjQRu4XTneawJgY,69年老店麵攤（米粉湯）,3.5,,low confidence,用瘦肉製作、口味偏甜，不錯吃,只有一則評論提到滷肉飯，且該店主打米粉湯；未提及滷肉飯價格。評論日期有未來日期（2026-08-08）。
+ChIJTSBf3m6pQjQRZ1ACg5G-7dI,六條通魷魚羹,2.8,40,low confidence,滷汁多但肉偏少，略似湯飯、不油膩，價格不算划算,僅一則評論提到魯肉飯；此店以魷魚羹為主打，其餘評論未談及滷肉飯。
+ChIJTXeAwsiuQjQRIwYdMhMw7uE,郭家魷魚羹,2.8,,low confidence,醬肉型滷肉飯，滷汁偏醬鹹，評價普通,評論1明確評價滷肉飯（醬鹹）；評論4僅提到點滷肉飯加蛋，未評價味道。評論2提到的是米粉上的肉燥，不算滷肉飯。評論多半在談魷魚羹。
+ChIJU0Y9f5mrQjQR35vCGHNPeug,圓環魯肉飯,2.0,,low confidence,滷肉飯便當偏貴、分量很少、味道普通,只有第3則評論提到滷肉飯，便當價$90不算單點價格，故未填價格。其他評論多談鴨肉飯、炒飯等其他餐點。
+ChIJURRjv4CuQjQRd0B4MvPOqUs,尋偵手作日本料理,3.5,780,price out of range,日式滷肉飯以魚肉泥為主，口味不錯但份量小,此為日式料理店，「日式滷肉飯」是以魚肉泥為主的海膽丼飯，並非傳統豬肉滷肉飯，僅一則評論提及；780元為海膽等級較高的版本，並非一般小碗價格。
+ChIJURRjv4CuQjQRd0B4MvPOqUs,尋偵手作日本料理,3.5,,low confidence,日式滷肉飯以魚肉泥為主，口味不錯但份量小,此為日式料理店，「日式滷肉飯」是以魚肉泥為主的海膽丼飯，並非傳統豬肉滷肉飯，僅一則評論提及；780元為海膽等級較高的版本，並非一般小碗價格。
+ChIJV9qRIJGpQjQR1IRy3l8u9xA,張記小吃 Chang'sNoodleShop,2.5,,low confidence,滷肉飯口味一般，沒有特別亮點,只有一則評論（2021-05-05）提到滷肉飯，且僅簡短評為「一般」；其餘評論談乾麵、小菜與服務。
+ChIJVUlaYbSpQjQRUfvJ4BGET5A,好友鵝肉切仔麵,3.6,,low confidence,味道中上、稍肥但不油膩,僅一則評論提到滷肉飯；滷肉飯加湯合計80元，非單點價格，故未填價格。
+ChIJVz4IDo6rQjQRAg7_mlxU4S0,老翁家四神湯 刈包 豬腳飯,2.8,,low confidence,滷肉飯口味偏清爽，評價普通,僅一則評論（2026-07-18）評論滷肉飯，說是清爽型、覺得還好。其餘評論談豬腳飯、四神湯、刈包、腿庫飯，不計入。
+ChIJW39fI_KuQjQRkj-djMHBhj8,鍋董日式涮涮鍋石牌店,4.0,,low confidence,滷肉飯味道不錯，搭配火鍋餐點,僅一則評論提及滷肉飯，且只簡短稱讚味道不錯；這是火鍋店的附餐，沒有價格資訊。
+ChIJW99DbMSrQjQRj7VWsgJOZ9k,雙月食品社 敦北店,4.0,,low confidence,滷汁油亮香氣足，水準之上，台南人也認可,僅一則評論提到滷肉飯，此店以燉雞湯與拌麵為主；無滷肉飯價格資訊。
+ChIJWbpn2D6pQjQRFVICdP5sadg,三重知高飯（延三夜市）（臺北市友善廁所店家）,4.5,,low confidence,滷肉飯香、加蝦皮似粽子風味，米飯Q彈,僅一則評論明確評論滷肉飯口味；評論1談的是瘦肉/控肉類配菜分配與服務，評論3「真心滷肉」意指不明（可能是腿庫），未計入。
+ChIJXbUPuxOqQjQRu6R1eNUz2N8,鬍鬚張魯肉飯 台北萬芳店,1.5,,low confidence,滷肉份量極少，配菜佔位，價格偏高不划算,僅一則評論提到滷肉飯（便當），且為近期負評；其餘評論談炸雞、排骨飯、環境等，與滷肉飯無關。便當價格約近200元，非單點價格，故不列價。
+ChIJXdW4CL6pQjQRGiJSXjNF-08,市場口魯肉飯焢肉飯焿湯（蝦仁，花枝，綜合）,4.8,,low confidence,肉燥香氣濃、黏嘴鮮鹹，小碗搭配羹湯評價極高,評論1、2提到的是擴肉飯/控肉飯（整塊焢肉），不計入滷肉飯；評論3明確稱讚魯肉飯，但150元為魯肉飯小碗＋花枝羹＋紅燒肉套組，不能當單點價。評論5未實際品嚐。
+ChIJY6HXY8urQjQRtxOLdAKrpfY,老店頭台南意麺,2.5,,low confidence,滷肉偏瘦肉型，缺少皮油與膠質，口感油香不足，味道偏平淡,僅一則評論明確評論滷肉飯，且評價偏負面；評論1提到肉燥但是配意麵，不計入。
+ChIJY9taIAGqQjQR3UvT-ld2vXc,《洪》景美活土虱 • 藥膳排骨,3.5,,low confidence,不肥不瘦、整體協調，但描述簡短,僅一則評論提到滷肉飯，且該店主打土虱與藥燉排骨，評分依單一評論推估，參考性有限。
+ChIJYd1CMgCvQjQRvC_Lw_KfTDs,一碗不夠飽,1.5,,low confidence,飯濕黏不Q，滷肉過肥且塊大，令人反胃,僅一則評論提及滷肉飯且為負評；其他評論多談乾意麵、炒泡麵等。
+ChIJYfIZQ1qpQjQR1KGDwRH5tkk,丸林魯肉飯,3.5,,low confidence,滷肉飯肥瘦相間,僅一則評論提到滷肉飯，且只簡短描述肥瘦比例，未明確評價好壞，分數為保守估計。其他評論談的是配菜、環境、價格或排骨，未計入。未提供單點滷肉飯價格。
+ChIJYfIZQ1qpQjQRlYV-mAl4PQI,丸林魯肉飯,2.5,,low confidence,滷肉飯沒有特別特色，味道普通,僅評論4直接評論滷肉飯（無特色）；評論1點的是爌肉飯、評論3未吃滷肉飯、評論2點雞肉飯，皆不計入。
+ChIJYwgTbdurQjQRgsOH1hzD3A0,古早灶咖,3.0,,low confidence,滷肉飯口味偏淡,僅一則評論提到滷肉飯，評價為口味稍淡；其他評論未提及滷肉飯，評論3的「肉量」不確定是否指滷肉飯。
+ChIJYxWoLbuuQjQR6iu-d37Wb3I,牛棒碗安GOBO精緻鍋物,4.5,,low confidence,副餐魯肉飯好吃,僅一則評論提到副餐魯肉飯，內容簡短；店家為火鍋店，無單點價格。
+ChIJYzVKRImpQjQRTDIDDZy7hCw,多多小吃,4.0,,low confidence,魯肉飯好吃，整體口味清淡,僅一則評論（2024-12-10 的二訪紀錄）提到魯肉飯，且只簡短稱讚好吃；店家主打清淡口味，其他評論多談餛飩、牛肉麵等。未提供單點價格。
+ChIJYzYVGTmpQjQRzhTusdKPXGM,台北橋孔魯肉飯,4.0,,low confidence,口味像家常古早味，類似阿嬤煮的滷肉,僅1則評論評論滷肉套餐（review 1）；價格為套餐加蛋，不採計。review 2 僅表示想試滷肉飯，4、5為控肉飯，不計入。
+ChIJZ1bbxLWrQjQR53xrrWpW65k,古早味麵店,3.0,40,low confidence,滷肉飯評價普通，只說「還可以」,只有第3則評論（內含2024-10-25的首次購買記錄）提到滷肉飯，價格40元取自該則評論。其他評論主要講乾麵、餛飩、綜合麵。
+ChIJZQdyabCsQjQRvhxBVhTk5iU,全6連霸肉燥飯,4.0,,low confidence,魯肉飯好吃，獲得正面評價,僅一則評論提到魯肉飯，且描述簡短；其他評論多談排骨便當與配菜。
+ChIJZUmeWzCrQjQRa44IX8cGwWg,古芝米線 越南美食,4.0,,low confidence,使用瘦豬絞肉，搭配配菜，建議加蛋,僅一則評論提到肉燥飯，且評論偏正面但描述有限，分數依單一評論推估。此店主打越南料理。
+ChIJZc4d9zipQjQRQPYHpdc2PTM,見來成魯肉飯,3.8,,low confidence,魯肉古早味、鹹香入味，口感不錯,僅評論2提到魯肉（與控肉合評）；評論1主要談控肉飯，不計入。其餘評論談便當、炸雞腿，與滷肉飯無關。
+ChIJZdk2i5mvQjQRtYwiyYVRLJI,陸捌拾麵館,4.0,,low confidence,小碗滷肉飯份量不小，是肉燥式滷肉，口味受喜愛,僅一則評論提到滷肉飯；肉燥麵（60元）不算滷肉飯，故未採計價格。
+ChIJ_86qTeCrQjQRlutGxkXTxfQ,豬腸冬粉魯肉飯,3.8,,low confidence,魯肉給得大方、份量飽足，飯與配菜分量也足,僅2021年一則評論明確評論魯肉飯；其他評論談的是油飯、豬腸冬粉，油飯有淋肉燥但不算滷肉飯，故未計入。未提供魯肉飯單點價格。衛生評價有分歧。
+ChIJ_Y76zguvQjQRlDEfpqMMS2w,台南(王) 魯肉飯 肉羹麵,2.0,,low confidence,肉燥油花偏多，難以入口，評價負面,評論1僅列出魯肉飯為推薦品項，未評價味道；評論3為唯一明確評價，負面。評論4的小碗70元指肉羹麵，非魯肉飯價格。
+ChIJ__fN-IupQjQRI1iQHLUvJbI,阿里港,3.0,,low confidence,滷肉飯偏滷肉醬style，味道普通,僅一則評論（2021-01-19）提到滷肉飯，評價普通；其餘評論皆在談鵝肉飯、鵝肉便當，未計入。無滷肉飯價格。
+ChIJa-ar406pQjQRbFIwKEnw5os,龍恩控肉飯（康定店）,3.5,,low confidence,肥肉讚但偏少，調味濃郁不死鹹，飯煮得好,只有第1則評論明確評論滷肉飯；其他多談控肉飯、滷排骨飯或刮包，不計入。店名為控肉飯專賣，滷肉飯非主打。
+ChIJa28QLWivQjQR9jgEjfxe8JU,福安食品行,4.0,,low confidence,有評論稱滷肉飯好吃，但著墨不多,只有一則2018年的舊評論提到滷肉飯，且與其他麵食一併讚美，沒有具體描述口味；其餘評論多談羹湯與甜點。
+ChIJa9vPbwutQjQRw1RMeXPvG84,軒記 台灣小吃,1.5,45,low confidence,滷肉飯肉少多為肉湯、飯偏硬，令人失望,僅一則評論明確評價滷肉飯；第1則僅提及青菜有肉燥，未評論滷肉飯。價格取自雙人套餐內的單項標價。
+ChIJaQXdwc-uQjQR9Q3gOMnQuDw,社中街油飯肉羹,3.0,,low confidence,油飯偏像滷肉飯，可自淋滷汁，口味尚可,此店主打油飯與肉羹，非典型滷肉飯店；僅一則評論提到油飯似滷肉飯，其餘多為衛生或服務評論。評論2提到肉汁加淋但未評價滷肉飯本身。
+ChIJaT8Cfl6vQjQRaQVO4WXR_m8,D429美味盒飯,3.0,,low confidence,北投傳統黑金派，偏鹹、肉感少，醬香與膠質明顯,只有第1則評論談到本店滷肉飯；其餘評論講的是矮仔財、黃家酸菜滷肉飯等其他攤位，未計入。評論者為彰化人，覺得偏鹹不太適應，評分為推估。
+ChIJab4Vs1CuQjQRhkgCC4BIyws,北投咖喱飯,3.8,,low confidence,滷肉飯很香，但僅一則簡短提及,只有一則評論提到滷肉飯（「很香」），其餘評論多談咖哩飯、牛腩、豆腐，未提供滷肉飯價格。分數依單一簡短評價推估。
+ChIJazr9jSyrQjQRb6-vS2F2_PA,歐買尬豬霸王豬腳飯專賣店 永春店,3.4,15,price out of range,堂食評價不錯、肥瘦均勻；但優惠與外送的滷肉飯被批只有滷汁、肉少,評論1的麻滷飯與滷肉飯加辣混在一起描述；評論2的15元為榮獲500碗優惠活動價，非一般價格，外帶品質被批評；評論5為外送大滷肉飯，抱怨份量與價格。評價呈兩極，近期有好有壞。
+ChIJb6yB8IeuQjQRMmIFTFYTE7o,天晴麵店,3.5,30,low confidence,南部口味、不重口微甜，拌料油但不膩，類似豬油拌飯,僅一則評論明確評論滷肉飯；另一則提到陽春麵的肉臊死鹹偏甜，但非滷肉飯，未計入。價格為2024年資料，之後可能已漲價（2026年評論提到多數餐點漲十元）。
+ChIJc0SuaE-rQjQRAq1yCI7pPeQ,宵夜控肉飯(胡適小吃),3.0,,low confidence,滷肉飯尚可，加荷包蛋更好,僅評論5提到滷肉飯；評論3和4談的是控肉/焢肉飯，不計入。店名主打控肉飯，滷肉飯評價資料少且較舊。
+ChIJcRn7WoSuQjQRVSH-oT7uVgo,士東客家莊,2.8,,low confidence,滷汁偏瘦肉型、香氣尚可但缺油脂膠質，白飯偏軟水分多,僅評論1提到滷肉飯，評價普通；評論3的「靈魂肉燥」未明指滷肉飯故未計入。該店主打銷魂控肉，非滷肉飯。
+ChIJc_DuQQqrQjQRBKSwo7wSkPU,小麵店,2.0,25,low confidence,滷肉飯香氣不足令人失望；另有一次已售完,僅評論3明確評價滷肉飯（小碗25元，偏負評）；評論1只說已賣完，未評價味道。其他評論多談羹湯或泛稱好吃，未計入。
+ChIJcwY1BjusQjQRxzkWrzfRk-A,來旺小吃店 (便當),1.5,,low confidence,滷肉飯偏死鹹，出餐慢,只有一則評論提到滷肉飯且評價負面。2022年的評論提到三層肉飯、紅燒肉飯及滷肉小菜，不是滷肉飯，故未計入。
+ChIJd95NCAasQjQRQ7EGEdoR_n4,明水397食堂,4.0,,low confidence,肥肉比例偏高但不膩，滷汁香氣足，配越光米順口,僅一則評論提到滷肉飯，且未列出單點價格。
+ChIJd9a8YLCrQjQRFiZ0zGAULCU,綻放手作早午餐 木柵忠順店,4.5,,low confidence,滷肉飯令人驚艷，評價很高,僅一則評論提到滷肉飯，且只有簡短讚美，未描述具體口味；其餘評論未提及滷肉飯。
+ChIJdwXy32epQjQRRKgTY9zYxGg,高家莊米苔目,2.5,,low confidence,滷肉飯配料偏少，份量不足,僅一則評論提到滷肉飯，且只評論料少；評論中的80元是米苔目價格，不是滷肉飯價格，故未填價格。
+ChIJdwzIQKyrQjQRRlYSxyIQHJE,金仙蝦捲飯 南港店,3.0,,low confidence,滷汁多但偏鹹；飯上淋滷肉，內容未細評,評論1提到飯中滷汁多但太鹹(3星)；評論3僅提到飯上淋魯肉未評價口味。此店主打排骨飯與蝦捲飯，滷肉飯非主力，且未見單點價格。
+ChIJeRJe5JupQjQRv4RC78IDeg4,滿塘台南虱目魚-西門店,3.5,,low confidence,滷肉飯味道不錯，但滷肉份量偏少,僅一則評論提到魯肉飯，其餘評論談論蛤蠣湯、蚵仔煎等其他餐點；無價格資訊。
+ChIJeTWafwasQjQROyVE8Ycoi1M,台發切仔麵,3.0,,low confidence,瘦肉為主、口味偏鹹，飯粒有顆粒感，非主打,第1則有評價滷肉飯（偏鹹、期望不宜過高）；第4則只提到附黃蘿蔔，未評價口味，故僅第1則可評分。
+ChIJeWP9oXypQjQRGXtSGOd8w58,大福燒 （牛小排泡飯）,4.0,,low confidence,豬腿肉臊飯，瘦肉不柴、豬皮彈牙，用料實在、價位划算,僅一則評論提到滷肉飯（小），未標示價格；店家主打牛小排泡飯與牛肉麵。
+ChIJexlO5JurQjQR2I_zWvIXGOE,十全藥燉排骨,2.0,,low confidence,飯偏軟爛，滷肉多為肥肉、湯汁太少不夠拌飯,僅一則評論評論滷肉飯，其餘多談臭豆腐、藥燉排骨與蚵仔煎。
+ChIJez2XaR2rQjQRo55k_zpQ-pQ,徐董米粉湯,4.0,,low confidence,滷肉乾淨、肥瘦適中，滷汁香而不膩，搭醃黃瓜解膩,評論5僅提到辣椒醬可加在滷肉飯，未評價其味道，故未計入提及數；只有一則評論實際評價滷肉飯。
+ChIJf086CpCsQjQRJEYZBbpLMNs,國防醫學院學生餐廳,4.0,,low confidence,肉燥飯色澤琥珀油潤，被推薦為必點,僅一則評論提到肉燥飯，且內容像是泛用的餐廳介紹文字，與學生餐廳不太相符，可信度有限。分數依其正面描述推估。
+ChIJf7l6nAypQjQR5trzkBvx9qQ,城中美食,3.8,30,low confidence,份量不算少，味道不錯,僅一則評論提到滷肉飯，評價簡短；其他評論主要談米糕、豆花、魷魚麵。
+ChIJfRSbsbOpQjQRI-PaGXAltwQ,北港滷肉飯什錦湯,4.5,,low confidence,滷肉飯好吃，評價不輸知名店家,僅評論2明確提到滷肉飯並給予正面評價；其他評論談蚵仔麵、什錦麵、份量或環境，未明確評論滷肉飯，故未計入。
+ChIJg3BegPmvQjQRhpZsesMX4NE,鬍鬚張魯肉飯 台北天母店,3.0,,low confidence,早期好評滷汁豐富肉嫩，近期有吃到石頭的品質問題,兩則提及滷肉飯且意見分歧：2023年好評（文風像宣傳文），2025年有吃到石頭的負評。其餘評論談豬腳、湯品與衛生，未計入。
+ChIJgb5P5EGpQjQRwbDv6bXkJzg,許記麵攤,3.3,,low confidence,滷肉飯偏油，肥肉不易化開略膩，味道尚可接受,評論1提到乾麵加魯肉，非滷肉飯；評論5只提到肉燥飯（大碗），未評價口味，故僅評論3有實際評價。無滷肉飯價格資訊。
+ChIJgcjK7WWsQjQR-YUHbPvHkOk,苗栗江記,3.8,,low confidence,滷肉飯肉量很多，搭配青菜豆腐湯划算,僅一則評論提到魯肉飯，只評價肉量多，未談口味細節；其他評論談客家小炒、粄條、肉圓等，與滷肉飯無關。分數為依單一評論的推估。
+ChIJgyo4LpCpQjQROUQh3PQdIIE,21號魯肉飯,3.0,,low confidence,滷肉飯口味中規中矩，無特別亮點,多數評論談的是控肉飯（爌肉飯，不計入），只有一則評論提到滷肉飯，且僅評為中規中矩。無滷肉飯價格。
+ChIJi3-tacmuQjQRBkcZqxo1gU4,王記咖哩飯,4.8,,low confidence,肥瘦比例恰好、醬香濃郁帶紅蔥頭香，米飯粒粒分明,僅一則評論提到滷肉飯，且文風偏宣傳，可信度有限；其餘評論未提及滷肉飯。店名為咖哩飯但評論describes便當店。
+ChIJi3bAGQCvQjQRLf9GLyQVk7A,黑白切滷肉飯,2.8,,low confidence,飯口感偏糊，整體普通，不難吃但無回訪意願,僅一則評論，且評論涵蓋多道菜，對滷肉飯的評價以飯偏糊與整體一般為主。
+ChIJi4AGpyatQjQR5fV3kojfehI,傳統小吃,5.0,,low confidence,滷肉飯味道夠味、被稱為神店，晚上才有供應,僅評論3明確提到滷肉飯。其他評論談乾麵、湯或泛稱小吃，未評論滷肉飯。評論3日期為2026-08-23，晚於其他評論，請確認日期是否正確。
+ChIJi7RSozCqQjQRrQNKL4NqYlI,老五小吃店,3.5,,low confidence,滷肉飯肥肉偏多，但味道不錯、搭配得宜,僅一則評論提到滷肉飯；另有評論提到肉燥板條與肉臊乾麵，非滷肉飯，未計入。
+ChIJj7mPPLesQjQRKUJlSNmpCAc,美鳳小吃,1.5,,low confidence,滷肉與飯都不及格，友人吃兩口就放棄,僅一則評論提到滷肉飯且為朋友所點、評價差；評論5提到的是控肉飯，不計入。
+ChIJk0LydwWvQjQRaRVaP2OOp3o,八方悅日式鍋物 北投永興店,3.5,,low confidence,自助吧提供的滷肉飯，煮得不錯，可無限取用,滷肉飯是火鍋店自助吧的附餐，只有一則評論評價其口味，其餘僅列出品項；無單點價格。
+ChIJkZkaR-KrQjQRHKjPS45irD4,合麟海南雞飯,3.5,,low confidence,滷汁不甜不鹹、味道不錯，但米飯疑似隔餐,僅一則評論提到滷肉飯；該店主打海南雞飯，其他評論未提及滷肉飯，無價格資訊。
+ChIJkbMnsYOpQjQRdVNvT-F0qBA,呂桑食堂,3.8,,low confidence,滷肉飯帶油香、味道不錯,僅一則評論提及滷肉飯，且該店以宜蘭菜為主；西魯肉為什錦羹，不算滷肉飯。
+ChIJkyfk4ZGuQjQRvHwlGJZ3pUo,禾口擔仔麵,3.8,,low confidence,肉燥飯大碗味道蠻好吃,僅一則評論提到肉燥飯（大碗45元，含菜頭貢丸湯合計80元），因只有大碗價格，未列為價格。其他評論提到的是豬油拌飯，不算滷肉飯。
+ChIJlwxBodUBaDQRNKCXGPBWZfg,暖香食堂,3.5,80,low confidence,醬汁多、肥瘦混合偏瘦，口味偏鹹、醬油味重,僅一則評論詳述滷肉飯；價格80為滷肉飯便當價，非單點碗價，但為評論所述最接近的價格。其他評論未提及滷肉飯。
+ChIJm8fnnIOpQjQRfs1dfoDJJH4,大來小館 永康店,3.0,,low confidence,意見分歧：有人覺得好吃，有人嫌飯軟、滷肉平淡,兩則提及滷肉飯，評價相反（2026-06-29 負評、2026-06-06 好評），未提及價格。
+ChIJmWcpDaqrQjQRBZRq3SnVGGo,正純小吃店,2.5,,low confidence,肉燥飯偏鹹,僅一則評論提到肉燥飯，評論多聚焦於臭豆腐、乾麵與肉圓。評論1提到的清淡偏油似指乾陽春麵，未計入。
+ChIJmbr-YQCvQjQRo_-O4w5A68o,飯日子,4.0,,low confidence,肥瘦參半，肥肉不油膩，口味合胃口,僅一則評論提到滷肉飯，評價正面但樣本少；其他評論多談炒飯、服務或其他菜色。
+ChIJn0NuUkSrQjQRpeSLg5Ukk8w,胡饕米粉湯美食小吃 台北市府店,4.5,,low confidence,滷肉飯加大好吃、不死鹹、香,僅一則評論提到滷肉飯；第5則談的是祖傳乾麵的滷肉，非滷肉飯，未計入。
+ChIJn0w9CwCtQjQRujjk4jleP_4,嘴饌小吃店、宵夜、美食,3.8,,low confidence,蛋包肉燥飯肉燥清爽鹹香，搭小黃瓜與蛋黃口感柔和,僅一則評論提到肉燥飯（蛋包肉燥飯），店家主打傻瓜乾麵，其餘評論多談乾麵與小菜。分數依單一評論推估。
+ChIJn8CclR-rQjQRde04itumA6s,涮嘴 昆陽店,2.5,,low confidence,火鍋吃到飽附贈滷肉汁／肉燥，有人覺得死鹹單調,滷肉飯只是火鍋店的免費吃到飽配料。第1、4則只提到有提供滷肉汁／肉燥，未評價味道；只有第5則評價為偏鹹單調，故分數僅依單一評價推估。
+ChIJnQTa4TirQjQREpiIufCxSPA,阿琴小吃,4.5,35,low confidence,肉燥飯味道與份量都好，價格親民,僅一則評論提到肉燥飯，價格為大碗35元（評論內文標註113.09.25用餐），無小碗價格。
+ChIJnzEkEPOsQjQRH3kyZUqdQL4,131麵飯專賣店,4.0,,low confidence,帶點南部口味，評價好吃,僅一則評論提到滷肉飯，且只簡短稱讚南部口味好吃，分數依此推估；無價格資訊。
+ChIJo6N27q6rQjQRg4l0gY8utV4,柔兒手工水餃,3.8,,low confidence,偏南部口味、以瘦肉為主、古早味，份量大、價格便宜，略偏鹹,只有第1則評論明確評價肉燥飯。第5則提到一碗55元，但沒有說明是哪道餐點，因此不採用價格，也不計入提及。
+ChIJoYNhz7SrQjQR0mj7D_X11CM,嘉義第一名火雞肉飯,2.5,,low confidence,滷肉肥瘦混搭，肥肉偏多,此店主打火雞肉飯，僅評論1提到滷肉（點雞滷飯），評價為肥肉偏多；其餘評論皆談雞肉飯，不計入。評論2、3的95元為便當價，不採用。
+ChIJo_wmtCiqQjQRIVi5bVHs_SY,二八麵堂,3.8,,low confidence,魯肉飯評價不錯，但僅簡短提及,僅評論4提到魯肉飯「也不錯」。評論2、3談的是肉燥麵與滷肉麵，不是滷肉飯，故未計入。
+ChIJocB1-E-tQjQRLmb3foLCGqQ,曾記焿府,3.0,,low confidence,有人覺得不錯吃，也有人吃到未清除乾淨的毛,兩則提及滷肉飯的評價互相矛盾：一則稱不錯吃，一則指出滷肉有毛、處理不乾淨。多數評論主要談羹麵與其他品項。
+ChIJoeG-BpSrQjQRxAW5R4IQT6g,東引小吃店,3.8,,low confidence,滷肉飯味道不錯，評語簡短,僅一則評論提到滷肉飯，且只簡單稱讚味道不錯；其他評論多談麵類、滷味、牛肉湯。
+ChIJpTizheCpQjQRVYTnCu8a_i4,紅鬍子傳統美食,4.0,,low confidence,滷肉飯肥肉偏多但入味不油膩,僅一則評論提到滷肉飯，其餘評論多談麵線與肉圓；分數依單一評論推估。
+ChIJpx1IwYerQjQRxY8gI0svXEY,點一碗銷魂鴨肉飯（信義吳興店）,2.5,,low confidence,肉末滷製、滷汁不黏稠，飯粒普通，整體平庸,此店主打鴨肉飯，僅一則評論提到滷肉飯，且評價偏普通；其他評論談的是鴨肉飯，不計入。
+ChIJq-pVfdurQjQRqxlhcTnNQWs,美玲小吃,4.0,,low confidence,滷肉飯風評不錯，搭配香辣辣椒,僅一則評論提到滷肉飯且評價簡短；2026-07-31 評論提到的是乾麵上的肉燥，非滷肉飯，未計入。
+ChIJq5RB6JWrQjQRV9atBcnfljk,財神台南擔仔麵,3.0,,low confidence,滷肉飯評價普通，建議加魯蛋，份量偏少,僅評論1提到加魯蛋建議但未明確評價味道，評論3明確說一般般；其餘評論主要談擔仔麵。評分主要依據評論3。
+ChIJqZMljw-sQjQRhET4tRVLmCQ,統生天霸王豬腳,4.0,,low confidence,客家口味偏鹹、鹹香下飯，肉燥不過油、香氣濃郁,僅一則評論具體評論滷肉飯，其餘評論談豬腳飯、蹄膀飯等，未計入。
+ChIJq_0sDM-pQjQRXIyv-o14Mz8,來來台灣小吃店,3.5,,low confidence,滷肉飯味道普通，非南部口味；另有人讚好吃,第1則評價滷肉飯偏普通，第4則僅列出菜名並給5星但無具體評論，兩者不完全一致；其餘評論未提及滷肉飯。
+ChIJqb2oJWysQjQRTYuVsoywDsU,黑美林-傳統台南小吃,4.0,,low confidence,滷肉飯香、飯粒夠黏,僅一則評論提到滷肉飯，且為順帶推薦；菜單上沒有白飯但可加點。其餘評論主要談熱炒菜色，第4則提到的「滷味」不是滷肉飯。
+ChIJr3ho1V-rQjQRX3JDgEJd6TE,闞記涼麵,2.8,,low confidence,魯肉飯口味普通，無特別亮點,僅一則評論提到魯肉飯（評價普通）；店家主打涼麵。第3則提到沙茶麵肉燥，與滷肉飯無關。
+ChIJrbc48RCpQjQRjoiVOML_g_A,梁社漢排骨 重慶北店,1.5,35,low confidence,一碗飯量偏少，價格不划算,僅一則評論提到滷肉飯，主要抱怨份量少；其餘評論談雞腿、便當與衛生，與滷肉飯無關。
+ChIJrflEfg-sQjQRpr2Ck8lOCSM,阿國仔傳統切仔麵,3.0,,low confidence,一則稱肉燥香濃鹹甜平衡；另一則批評白飯不佳,第1則提到乾油麵搭滷肉飯共70元，為組合價，不是單點滷肉飯價格，故未填價格。兩則評價相反（4星正面、2星負面），其餘評論未提及滷肉飯。
+ChIJrwv8AQCvQjQRjdqtRnGn7yA,阿雅小吃店,4.5,,low confidence,推薦滷肉飯，價格便宜，每來必點,僅一則評論明確提到滷肉飯，且只表達推薦，未描述口味細節；其他評論談羹麵、油飯或整體餐點與服務。評論中無滷肉飯單點價格。
+ChIJryTKl-GpQjQRsjsGaDhr4ak,滷肉飯,4.5,,low confidence,滷肉飯肥肉醬汁多，口味受喜愛,此店似兼營彈珠遊戲場，多數評論與滷肉飯無關；僅一則評論提到滷肉飯，另有評論提到油飯與麵線，未計入。
+ChIJs-Vj2LqpQjQRtGwtXnKz-bM,小陳魚翅肉羹,4.5,,low confidence,偏醬油五香、滷得入味，肥肉帶膠質，口味稍重,僅一則2021年評論提到滷肉飯，資料較舊；其他評論多談肉羹與麵類。評論未提供滷肉飯價格。
+ChIJs3J9BY6rQjQRKRSS4DRXUN4,瘦哥擔仔麵,2.0,,low confidence,賣相佳但味道極淡，口味偏清淡,僅一則評論明確評論滷肉飯（2024年），說明味道極淡且認為是刻意設計；評論3的「肉燥」是指意麵，評論5的瓜子肉飯不確定是否為滷肉飯，故未計入。
+ChIJscG9TEWuQjQRPizw0H7m25s,24小吃店,4.0,,low confidence,小碗屬碎肉燥風格，肥瘦適中，滷汁鹹甜回甘，米飯入味順口,僅評論2提到小魯肉飯且給予正面評價；評論3的五花肉為小菜，非滷肉飯。評論2文字偏像介紹文，可信度略低。未提及價格。
+ChIJscdIZXCpQjQR82-OL1kKU1Q,恩恩滷肉飯,2.8,,low confidence,份量大、肉多肥且不易化口，滷汁偏鹹、層次平，飯偏軟,僅評論1提到滷肉飯（大碗）並有評價；評論3談的是控肉（不計入）；評論2的油耗味未明指滷肉飯；其餘評論未談滷肉飯。未提供單點價格（人均$70不計）。
+ChIJt3pWRCIBaDQRAomtuMkBuic,貓空美食,2.0,,low confidence,魯肉飯份量偏小,僅評論1提到魯肉飯，抱怨碗太小。評論2、3的「雞滷飯／雞魯飯」屬雞肉飯類，不列入；70元為雞魯飯價格，故未採用。
+ChIJtZgPOG2pQjQRCBcJ1gIbaOU,好味涼亭 麵食館,4.0,,low confidence,肉燥飯飯粒分明、吸附滷汁好吃，小碗份量偏大,僅一則評論提到肉燥飯，店家主打涼麵與滷味；評論未提供肉燥飯單價。
+ChIJt_kXeJWvQjQRDg-JBaV7Fkk,梁社漢排骨 士林中正店,2.0,,low confidence,招牌滷肉飯份量少，初上桌肉量不足，與網路照片落差大,僅評論2提到滷肉飯，補了碎肉後仍覺落差大。評論4提到125元淺盤但未說明是滷肉飯，故不採用價格。
+ChIJteMO7pqpQjQRS_OwMDjR_qM,阿宏師涼麵 嘉義雞肉飯(西門康定店),2.0,,low confidence,滷肉味道普通偏差，湯頭油膩,僅評論1提到滷肉：先前點過覺得難吃，這次試吃仍不怎麼樣。評論5的「雞魯飯」疑為雞肉飯，不計入。
+ChIJtwVEop2rQjQRltf7wTGsRWk,京棧便當,4.0,,low confidence,小孩喜歡，吃得精光,僅一則評論提到滷肉飯，大份60元，但為大份價格而非最小份，故未填價格；評論只有簡短正面評價（孩子吃光），分數依此推估。
+ChIJu0ACwYyuQjQRgL0-uzAcc2k,鬍鬚張魯肉飯 台北石牌店,4.0,,low confidence,滷肉膠質黏軟糯香，品質穩定,評論3僅提到買小碗滷肉飯外帶，未評價味道；僅評論4實際評價口味。其他評論多為餐點出錯或服務。
+ChIJuX7WU8muQjQRnWebUURoXKw,ㄚ輝麵店,3.0,,low confidence,白飯煮得不錯，滷汁偏瘦、五香味明顯、不太鹹香，普通,僅1則評論評價滷肉飯；評論5提到乾麵加滷肉，但非滷肉飯，未計入。無價格資訊。
+ChIJuXRdivGtQjQRutHEiV8tPvc,江記古早味豬腳,2.0,,low confidence,被認為只是滷汁淋飯，不像一般滷肉飯,僅一則評論提到滷肉飯便當，且內容簡短、偏負面；其他評論主要談豬腳、燒肉、腿庫等，不計入。
+ChIJuZw3Tj-pQjQRpSynezxN6LE,雲鼎阿二麻辣食堂-師大店,4.5,,low confidence,滷肉飯被稱讚很讚，但描述簡短,僅一則評論提到滷肉飯，且為麻辣鍋店的附餐類品項，評價簡短，參考性有限。
+ChIJv0P6mSmqQjQRjco_KOc6Rn0,溫州大餛飩,3.0,35,low confidence,口味家常普通、滷肉偏肥，附半顆滷蛋，價格便宜,僅一則評論提到滷肉飯，價格為小碗；評論者認為沒有亮點但CP值尚可。其餘評論多談麻醬麵、餛飩等其他品項，另有衛生方面的負評。
+ChIJv_vRjfGuQjQRAq4Zz9Fl1pQ,尚方 排骨酥 魯肉飯,3.5,,low confidence,評價兩極：一說偏鹹普通，一說好吃不膩,只有兩則評論提到滷肉飯，且意見不一致（2021年說普通偏鹹，2019年說好吃不膩），資料偏舊。其餘評論主要談便當、肉排、炸豆腐等。
+ChIJw18RLA6pQjQRldKjByy7Zs8,董家東北水餃小吃館,2.5,,low confidence,滷肉飯普通，飯沒煮熟偏硬,僅一則評論提到滷肉飯，且指出老闆換人後餐點改變；其他評論主要談水餃與湯品。
+ChIJwQHQKQCvQjQR82dsTvWYNbw,飯西施滷腳庫 遠東SOGO天母店,4.5,,low confidence,單點滷肉飯很好吃，受到推薦,評論1僅提到套餐內含一個滷肉飯，未評價其味道；評論2為唯一明確評價滷肉飯的評論，評價很高。套餐價210元為腿庫套餐，不是單點滷肉飯價格，故未列入。其他評論多談腿庫、虎掌或服務。
+ChIJwU6Nmc-uQjQR5-9O10nyVk4,張牛肉麵水餃｜社子美食｜滷肉飯｜雞肉飯｜家常小吃,2.8,,low confidence,滷肉飯口味普通，沒有特別亮點,僅一則評論提到魯肉飯，且只給出「普通」的評價；其他評論談的是雞肉飯、麵類與小菜。
+ChIJwy5Xw7KvQjQR5k6ZJlvNDSY,老魏雞絲飯,4.0,30,low confidence,滷肉偏肥、甜鹹適中，飯粒分明；大碗滷汁略少,僅一則評論談到滷肉飯；價格30元為大碗。第四則提到雞絲飯醬汁偏醬油膏，與滷肉飯無關。
+ChIJwysGSJepQjQRe41uZugTMkQ,佳典魯肉飯,4.0,,low confidence,小滷肉飯好吃、飯粒Q彈，套餐CP值高,僅第1則評論提到小魯（滷肉飯）；第2則建議控肉飯改淋滷肉醬，並提到加10元可升級滷肉飯，但未評價滷肉飯本身。其餘多為控肉飯、排骨飯與湯品。套餐價格不計入單點價。
+ChIJx4jslwyrQjQRy6-sMayZp_M,張 三代肉焿滷肉飯,3.5,,low confidence,肥肉製作、滷汁偏甜、紅蔥頭香氣足，但後段偏油膩,僅一則評論提到滷肉飯，其餘評論多談肉羹、乾米粉等其他品項。評論未提供滷肉飯價格。
+ChIJxb6lFgCtQjQR7vmpcoxUjX4,享之饌東石鮮蚵,3.8,,low confidence,鮮蝦滷肉飯搭配去沙腺鮮蝦，增加蛋白質、口感佳,僅一則評論提及，且是鮮蝦滷肉飯（加蝦的變化版），對滷肉本身風味描述有限，分數僅供參考。
+ChIJxd3dxc6uQjQR1aU8SKVeWjc,東鎮巴巴日式涮涮鍋,4.0,,low confidence,鍋物店附餐滷肉飯，有人稱好吃,僅review 5明確稱讚滷肉飯好吃；review 1只提到有滷肉飯可點，未評價。分數僅依單一評價，為涮涮鍋店而非滷肉飯專門店。
+ChIJy1bzvvKsQjQRyMQS2zWi7KI,無名小麵店,4.0,,low confidence,滷肉飯香，絞肉帶彈性、香菇偏甜；也有人建議改選麵,評論1明確稱讚滷肉飯；評論3僅建議滷肉飯與麵選麵，偏負面但未細說；評論5因禁屠宰沒有供應，不計入。無價格資訊。
+ChIJyXCszVmpQjQR9m7McxlW-_Q,迎客松小吃店,1.5,,low confidence,湯汁多偏水、膠質不足，鹹度尚可，配酸豆角不搭,僅一則評論談到滷肉飯且為負評；其他評論多讚雙醬麵，與滷肉飯無關。
+ChIJzX5YI32uQjQRsu_0I0LQYjI,天鍋宴天母店,4.0,,low confidence,副餐滷肉飯香氣與口味到位，表現不俗,此店為火鍋店，滷肉飯僅為套餐副餐，僅一則評論提及，且無單點價格。
+ChIJzYd2MoirQjQRpxBzAOrv018,梁社漢排骨-南港興華店-南港午餐首選|會議餐盒|外帶餐盒|外送餐盒|平價午餐|排骨便當|雞腿便當|在地推薦餐盒,3.8,35,low confidence,新推出的滷肉飯表現不錯，價格親民,僅一則評論提到滷肉飯，評價為「還不賴」，35元為單點價格；其餘評論多談雞腿飯、椒麻雞等。

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>滷肉飯指數 · 台北</title>
-  <meta name="description" content="這家店貴不貴？用地圖看台北各餐廳的滷肉飯價格。">
+  <meta name="description" content="哪裡的滷肉飯好吃？用 Google 評論為台北各餐廳的滷肉飯評分，畫在地圖上。">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <link rel="stylesheet" href="style.css">
@@ -14,14 +14,14 @@
     <aside class="panel">
       <header>
         <h1>滷肉飯指數 <span class="city">台北</span></h1>
-        <p class="lede">滷肉飯幾乎每家小吃店都有，用它的價格可以快速比較餐廳的消費水準。</p>
+        <p class="lede">從 Google 評論看台北哪裡的滷肉飯好吃。</p>
       </header>
 
       <section class="stats" aria-label="摘要">
         <div class="stat"><span class="stat-value" id="stat-count">–</span><span class="stat-label">家數</span></div>
-        <div class="stat"><span class="stat-value" id="stat-median">–</span><span class="stat-label">中位數</span></div>
-        <div class="stat"><span class="stat-value" id="stat-min">–</span><span class="stat-label">最便宜</span></div>
-        <div class="stat"><span class="stat-value" id="stat-max">–</span><span class="stat-label">最貴</span></div>
+        <div class="stat"><span class="stat-value" id="stat-avg">–</span><span class="stat-label">平均評分</span></div>
+        <div class="stat"><span class="stat-value" id="stat-top">–</span><span class="stat-label">最高分</span></div>
+        <div class="stat"><span class="stat-value" id="stat-price">–</span><span class="stat-label">中位價格</span></div>
       </section>
 
       <section class="filters" aria-label="篩選">
@@ -29,34 +29,34 @@
           <span>搜尋</span>
           <input type="search" id="search" placeholder="店名" autocomplete="off">
         </label>
-        <div class="field">
-          <span>價格 <output id="range-label"></output></span>
-          <div class="range-pair">
-            <input type="range" id="price-min" aria-label="最低價格" step="1">
-            <input type="range" id="price-max" aria-label="最高價格" step="1">
-          </div>
-        </div>
+        <label class="field">
+          <span>最低評分 <output id="score-label"></output></span>
+          <input type="range" id="score-min" min="1" max="5" step="0.5" value="1">
+        </label>
         <label class="check">
-          <input type="checkbox" id="hide-low"> 隱藏低可信度價格
+          <input type="checkbox" id="hide-low"> 隱藏低可信度評分（只有一則評論）
+        </label>
+        <label class="check">
+          <input type="checkbox" id="priced-only"> 只顯示有價格的店家
         </label>
       </section>
 
       <section class="legend" aria-label="圖例">
-        <h2>滷肉飯價格（新台幣）</h2>
+        <h2>滷肉飯評分</h2>
         <ol id="legend-bins"></ol>
       </section>
 
       <section class="list-section">
-        <h2>依價格排序 <span class="muted" id="list-count"></span></h2>
+        <h2>依評分排序 <span class="muted" id="list-count"></span></h2>
         <ol class="list" id="list"></ol>
       </section>
 
       <footer class="muted">
-        價格由程式自動讀取自各餐廳網站，可能已過期。點選餐廳可查看來源菜單。
+        評分由 Claude 閱讀每家店最多 5 則 Google 評論中關於滷肉飯的內容後產生，樣本很小，僅供參考。價格取自評論，可能已過期。評論來源：Google。
       </footer>
     </aside>
 
-    <main id="map" aria-label="滷肉飯價格地圖"></main>
+    <main id="map" aria-label="滷肉飯評分地圖"></main>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"

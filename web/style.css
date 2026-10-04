@@ -82,8 +82,7 @@ footer { font-size: 12px; }
   font: inherit; font-size: 14px; color: var(--text-primary);
   padding: 7px 10px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface-1);
 }
-.range-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.range-pair input { width: 100%; accent-color: var(--accent); }
+.field input[type="range"] { width: 100%; accent-color: var(--accent); }
 .check { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text-secondary); }
 .check input { accent-color: var(--accent); }
 
@@ -115,7 +114,7 @@ footer { font-size: 12px; }
 .popup h3 { margin: 0 0 2px; font-size: 15px; }
 .popup .addr { color: var(--text-secondary); font-size: 12px; margin-bottom: 8px; }
 .popup .big { font-size: 22px; font-weight: 600; font-variant-numeric: tabular-nums; }
-.popup .dish { color: var(--text-secondary); margin-left: 6px; }
+.popup .summary { margin-top: 4px; font-size: 13px; color: var(--text-primary); }
 .popup table { border-collapse: collapse; margin: 6px 0; font-size: 12px; }
 .popup td { padding: 1px 8px 1px 0; color: var(--text-secondary); }
 .popup td.num { text-align: right; font-variant-numeric: tabular-nums; color: var(--text-primary); }

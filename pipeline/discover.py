@@ -1,4 +1,4 @@
-"""Step 1: find Taipei City restaurants with the Google Places API (New)."""
+"""Step 1: find Taipei City restaurants and their reviews with the Google Places API (New)."""
 
 import argparse
 import hashlib
@@ -50,7 +50,8 @@ def search(client: httpx.Client, query: str, cell: dict, page_token: str | None)
     }
     if page_token:
         body["pageToken"] = page_token
-    key = hashlib.sha256(json.dumps(body, sort_keys=True).encode()).hexdigest()[:24]
+    # The field mask is a header, not part of the body, but it changes what comes back.
+    key = hashlib.sha256((json.dumps(body, sort_keys=True) + config.PLACES_FIELDS).encode()).hexdigest()[:24]
     cache_file = config.CACHE_DIR / "places" / f"{key}.json"
     if cache_file.exists():
         return json.loads(cache_file.read_text())
@@ -86,6 +87,24 @@ def to_record(place: dict) -> dict:
     }
 
 
+def to_reviews(place: dict) -> dict:
+    reviews = []
+    for r in place.get("reviews", []):
+        text = (r.get("text") or r.get("originalText") or {}).get("text")
+        if not text:
+            continue
+        author = r.get("authorAttribution", {})
+        reviews.append({
+            "rating": r.get("rating"),
+            "text": text,
+            "publish_time": r.get("publishTime"),
+            "author": author.get("displayName"),
+            "author_uri": author.get("uri"),
+            "google_maps_uri": r.get("googleMapsUri"),
+        })
+    return {"place_id": place["id"], "reviews": reviews}
+
+
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--limit-cells", type=int, help="only search the first N grid cells (for testing)")
@@ -102,6 +121,7 @@ def main(argv: list[str] | None = None) -> None:
         cells = cells[mid : mid + args.limit_cells]
 
     places: dict[str, dict] = {r["place_id"]: r for r in config.read_jsonl(config.RESTAURANTS_FILE)}
+    reviews: dict[str, dict] = {r["place_id"]: r for r in config.read_jsonl(config.REVIEWS_FILE)}
     before = len(places)
     dropped_locality = 0
     with httpx.Client(headers=headers, timeout=30) as client:
@@ -117,6 +137,8 @@ def main(argv: list[str] | None = None) -> None:
                             dropped_locality += 1
                             continue
                         places.setdefault(place["id"], to_record(place))
+                        if "reviews" in place:
+                            reviews[place["id"]] = to_reviews(place)
                     token = data.get("nextPageToken")
                     if not token:
                         break
@@ -124,9 +146,11 @@ def main(argv: list[str] | None = None) -> None:
             print(f"cell {i}/{len(cells)}: {len(places)} restaurants so far")
 
     config.write_jsonl(config.RESTAURANTS_FILE, sorted(places.values(), key=lambda r: r["place_id"]))
+    config.write_jsonl(config.REVIEWS_FILE, sorted(reviews.values(), key=lambda r: r["place_id"]))
     print(
         f"Saved {len(places)} restaurants ({len(places) - before} new, "
-        f"{dropped_locality} results outside the city skipped) -> {config.RESTAURANTS_FILE}"
+        f"{dropped_locality} results outside the city skipped) -> {config.RESTAURANTS_FILE}; "
+        f"reviews for {sum(1 for r in reviews.values() if r['reviews'])} -> {config.REVIEWS_FILE}"
     )
 
 

@@ -1,4 +1,4 @@
-"""Step 4: merge restaurants, extracted prices and manual overrides into the map's GeoJSON."""
+"""Step 3: merge restaurants, review ratings and manual overrides into the map's GeoJSON."""
 
 import csv
 import json
@@ -22,35 +22,36 @@ def read_overrides() -> dict[str, dict]:
 
 def main(argv: list[str] | None = None) -> None:
     places = config.read_jsonl(config.RESTAURANTS_FILE)
-    statuses = {s["place_id"]: s["status"] for s in config.read_jsonl(config.MENU_STATUS_FILE)}
-    prices = {p["place_id"]: p for p in config.read_jsonl(config.PRICES_FILE)}
+    reviews = {r["place_id"]: r["reviews"] for r in config.read_jsonl(config.REVIEWS_FILE)}
+    ratings = {r["place_id"]: r for r in config.read_jsonl(config.RATINGS_FILE)}
     overrides = read_overrides()
 
     features, review = [], []
     for place in places:
         pid = place["place_id"]
-        extraction = prices.get(pid, {})
+        rating = ratings.get(pid, {})
         override = overrides.get(pid, {})
         if override.get("exclude", "").strip().lower() in ("1", "true", "yes"):
             continue
 
-        price = extraction.get("benchmark_price")
-        dish = next((i["dish_name"] for i in extraction.get("items", []) if i["price"] == price), None)
-        confidence = extraction.get("confidence")
-        source = "menu"
-        if override.get("benchmark_price"):
-            price, confidence, source = round(float(override["benchmark_price"])), "high", "manual"
-            dish = override.get("dish_name") or dish
-        if price is None:
+        score, price, confidence = rating.get("score"), rating.get("price"), rating.get("confidence")
+        price_date = rating.get("price_date")
+        source = "reviews"
+        if override.get("score"):
+            score, confidence, source = float(override["score"]), "high", "manual"
+        if override.get("price"):
+            price, price_date = round(float(override["price"])), None
+        if score is None:
             continue
+        score = min(max(score, config.MIN_SCORE), config.MAX_SCORE)
 
-        if not config.PRICE_MIN <= price <= config.PRICE_MAX and source != "manual":
-            review.append({"place_id": pid, "name": place["name"], "price": price, "reason": "price out of range",
-                           "source_url": extraction.get("source_url"), "notes": extraction.get("notes")})
-            continue
-        if confidence == "low":
-            review.append({"place_id": pid, "name": place["name"], "price": price, "reason": "low confidence",
-                           "source_url": extraction.get("source_url"), "notes": extraction.get("notes")})
+        flag = lambda reason: review.append({"place_id": pid, "name": place["name"], "score": score, "price": price,
+                                             "reason": reason, "summary": rating.get("summary"), "notes": rating.get("notes")})
+        if price is not None and not config.PRICE_MIN <= price <= config.PRICE_MAX and not override.get("price"):
+            flag("price out of range")
+            price, price_date = None, None
+        if confidence == "low" and source != "manual":
+            flag("low confidence")
 
         features.append(
             {
@@ -60,45 +61,43 @@ def main(argv: list[str] | None = None) -> None:
                     "id": pid,
                     "name": place["name"],
                     "address": place["address"],
-                    "price": round(price),
-                    "dish": dish,
-                    "items": extraction.get("items", []),
+                    "score": round(score, 1),
+                    "summary": rating.get("summary"),
+                    "mentions": rating.get("mentions"),
+                    "latest_mention": rating.get("latest_mention"),
+                    "price": price,
+                    "price_date": price_date,
                     "confidence": confidence,
-                    "price_source": source,
-                    "source_url": extraction.get("source_url") or place.get("website"),
-                    "website": place.get("website"),
-                    "google_maps_url": place.get("google_maps_url"),
+                    "score_source": source,
+                    "google_rating": place.get("rating"),
+                    "google_rating_count": place.get("rating_count"),
                     "price_level": PRICE_LEVELS.get(place.get("price_level")),
-                    "rating": place.get("rating"),
-                    "notes": override.get("note") or extraction.get("notes"),
-                    "last_checked": (extraction.get("extracted_at") or "")[:10] or None,
+                    "google_maps_url": place.get("google_maps_url"),
+                    "website": place.get("website"),
+                    "notes": override.get("note") or rating.get("notes"),
                 },
             }
         )
 
-    features.sort(key=lambda f: f["properties"]["price"])
+    features.sort(key=lambda f: (-f["properties"]["score"], -(f["properties"]["mentions"] or 0)))
     config.GEOJSON_FILE.parent.mkdir(parents=True, exist_ok=True)
     config.GEOJSON_FILE.write_text(
         json.dumps({"type": "FeatureCollection", "features": features}, ensure_ascii=False, indent=1)
     )
 
     with config.REVIEW_FILE.open("w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["place_id", "name", "price", "reason", "source_url", "notes"])
+        writer = csv.DictWriter(f, fieldnames=["place_id", "name", "score", "price", "reason", "summary", "notes"])
         writer.writeheader()
         writer.writerows(review)
 
-    status_counts: dict[str, int] = {}
-    for s in statuses.values():
-        status_counts[s] = status_counts.get(s, 0) + 1
-    with_site = sum(1 for p in places if p.get("website"))
-    has_lurou = sum(1 for p in prices.values() if p.get("has_lurou"))
+    ok = [r for r in ratings.values() if r.get("status") == "ok"]
     print("Funnel")
-    print(f"  discovered          {len(places)}")
-    print(f"  with website        {with_site}")
-    print(f"  menu crawl          {', '.join(f'{k}={v}' for k, v in sorted(status_counts.items()))}")
-    print(f"  sent to Claude      {len(prices)}")
-    print(f"  has 滷肉飯          {has_lurou}")
-    print(f"  on the map          {len(features)}")
+    print(f"  discovered               {len(places)}")
+    print(f"  with reviews             {sum(1 for r in reviews.values() if r)}")
+    print(f"  sent to Claude           {len(ratings)}")
+    print(f"  reviews discuss 滷肉飯   {sum(1 for r in ok if r.get('mentions'))}")
+    print(f"  scored                   {sum(1 for r in ok if r.get('score') is not None)}")
+    print(f"  on the map               {len(features)} ({sum(1 for f in features if f['properties']['price'])} with a price)")
     print(f"Wrote {config.GEOJSON_FILE.relative_to(config.ROOT)}; {len(review)} rows to review in "
           f"{config.REVIEW_FILE.relative_to(config.ROOT)}")
 

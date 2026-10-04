@@ -11,10 +11,10 @@ load_dotenv(ROOT / ".env")
 
 DATA_DIR = ROOT / "data"
 CACHE_DIR = DATA_DIR / "cache"
-MENUS_DIR = DATA_DIR / "menus"
 RESTAURANTS_FILE = DATA_DIR / "restaurants.jsonl"
-MENU_STATUS_FILE = DATA_DIR / "menu_status.jsonl"
-PRICES_FILE = DATA_DIR / "prices.jsonl"
+# Raw Google reviews stay local (gitignored); only derived scores are published.
+REVIEWS_FILE = DATA_DIR / "reviews.jsonl"
+RATINGS_FILE = DATA_DIR / "ratings.jsonl"
 OVERRIDES_FILE = DATA_DIR / "overrides.csv"
 BATCH_STATE_FILE = DATA_DIR / "batch_state.json"
 REVIEW_FILE = DATA_DIR / "review.csv"
@@ -54,22 +54,18 @@ PLACES_FIELDS = ",".join(
         "primaryType",
         "googleMapsUri",
         "businessStatus",
+        "reviews",  # up to 5 per place; moves Text Search to the Enterprise + Atmosphere SKU
     ]
 ) + ",nextPageToken"
 
 MODEL = "claude-sonnet-5-5"
 FALLBACK_BETA = "server-side-fallback-2026-07-01"
 
-# Benchmark prices outside this range are kept out of the map and flagged for review.
+# Review-quoted prices outside this range are dropped and flagged for review.
 PRICE_MIN, PRICE_MAX = 20, 200  # NTD
+MIN_SCORE, MAX_SCORE = 1, 5
 
 DISH_PATTERN = r"滷肉飯|魯肉飯|肉燥飯|滷肉|魯肉|braised pork rice|lu ?rou"
-
-# Many restaurant sites (behind Cloudflare etc.) refuse unfamiliar bot user-agents.
-USER_AGENT = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/130.0 Safari/537.36 LurouIndex/0.1"
-)
 
 
 def require_env(name: str) -> str:
